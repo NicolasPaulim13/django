@@ -36,5 +36,6 @@ urlpatterns = [
     path('planos/', include('planos.urls')),
     path('contatos/', include('contatos.urls')),
     path('consulta/', include('consulta.urls')),
+    path('cadastro/', include('cadastro.urls')),
     path('sobrenos/', include('sobrenos.urls')),
 ]

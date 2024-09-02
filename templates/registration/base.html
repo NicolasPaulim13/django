@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="{% static 'css/contatos.css' %}">
   <link rel="stylesheet" href="{% static 'css/sobrenos.css' %}">
   <link rel="stylesheet" href="{% static 'css/consulta.css' %}">
+  <link rel="stylesheet" href="{% static 'css/cadastro.css' %}">
 
 </head>
 <body>
@@ -29,6 +30,8 @@
       <li class="nav-item"><a class="nav-link" href="{% url 'faq' %}">FAQ</a></li>
       <li class="nav-item"><a class="nav-link" href="{% url 'contatos' %}">Contatos</a></li>
       <li class="nav-item"><a class="nav-link" href="{% url 'sobrenos' %}">Sobre Nós</a></li>
+      <li class="nav-item"><a class="nav-link" href="{% url 'cadastro' %}">Login</a></li>
+
     </ul>
     <a href="{% url 'consulta' %}"><button type="button" class="btn btn-outline-primary">Faça sua Consulta</button></a>
   </header>
@@ -36,7 +39,8 @@
   {% block content %}
   <!-- O conteúdo da página específica será inserido aqui -->
   {% endblock %}
-
+<br>
+<br>
   <footer>
     <div class="container-footer">
       <div class="nome-footer">

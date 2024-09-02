@@ -1,0 +1,127 @@
+
+
+
+/* Container principal do formulário de login */
+
+.tudis {
+    position: relative;
+    left: 35%;
+    margin-top: 5%;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Logo no topo do formulário */
+.login-container img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+/* Título da página de login */
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilo dos inputs de texto e senha */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo do botão de login */
+.login-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Efeito de hover no botão de login */
+.login-container button:hover {
+    background-color: #218838;
+}
+
+/* Estilo da mensagem de erro */
+.login-container .error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Seção de login por redes sociais */
+.login-container .social-login {
+    margin-top: 20px;
+}
+
+/* Texto na seção de redes sociais */
+.login-container .social-login p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Layout dos botões de redes sociais */
+.login-container .social-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilo dos botões de redes sociais */
+.login-container .social-buttons button {
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Botão do Facebook */
+.login-container .social-buttons .facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+/* Botão do Google */
+.login-container .social-buttons .google {
+    background-color: #db4437;
+    color: white;
+}
+
+/* Seção de link para registro */
+.login-container .signup-link {
+    margin-top: 20px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Estilo do link para registro */
+.login-container .signup-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Efeito de hover no link de registro */
+.login-container .signup-link a:hover {
+    text-decoration: underline;
+}

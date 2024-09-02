@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'sobrenos',
     'contatos',
     'consulta',
+    'cadastro',
 ]
 
 MIDDLEWARE = [
@@ -124,7 +125,14 @@ STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'  # Diretório para coletar os arquivos estáticos
 
 # Configurações de autenticação e redirecionamento.
+
+
+
+# Configurações de autenticação e redirecionamento.
+
 LOGIN_URL = '/index'  # URL para página de login.
+
+
 
 
 # Default primary key field type

@@ -23,13 +23,14 @@
 
 .conteudo-home h2 {
     font-family: "Inter Light";
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: 100;
     opacity: 80%;
     position: relative;
-    top: -95vh;
-    left: 5%;
-    width: 55%;
+    top: -120vh;
+    left: 40%;
+    width: 35%;
+    height: 1%;
     color: rgb(255, 255, 255);
 }
 
@@ -38,7 +39,7 @@
     width: 20%;
     position: relative;
     left: 4.5%;
-    top: -92vh;
+    top: -120vh;
     color: rgb(0, 0, 0);
     background-color: #ffffff;
     border-color: transparent;
@@ -73,8 +74,8 @@
     font-family: "PlayfairDisplay";
     width: 50%;
     position: relative;
-    top: -10em;
-    left: 45%;
+    top: -12em;
+    left: 30%;
 }
 
 .vantegem1 {
@@ -116,8 +117,8 @@
     opacity: 80%;
     width: 50%;
     position: relative;
-    top: -11em;
-    left: 45%;
+    top: -13em;
+    left: 25%;
 }
 
 .counteiner-vantagens {
