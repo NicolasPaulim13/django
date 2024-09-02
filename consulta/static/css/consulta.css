@@ -1,0 +1,267 @@
+.btn-outline-primary {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.breadcrumb-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    top: 60px;
+}
+
+.breadcrumb-container .breadcrumb {
+    background: none;
+    padding: 0;
+    position: relative;
+    top: 70px;
+}
+
+.breadcrumb-container .breadcrumb-item a {
+    color: #6c757d;
+    text-decoration: none;
+    position: relative;
+}
+
+.breadcrumb-container .breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    height: 670px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.btn-custom {
+    background-color: #00bcd4;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    transition: background-color 0.3s;
+    width: 50%; /* Aumenta a largura do botão para 50% */
+    padding: 15px; /* Aumenta o padding para deixar o botão maior */
+}
+
+/* Estilo para o botão "ENVIAR MEU COMPROMISSO" */
+.btn-compromisso {
+    width: 50%; /* Aumenta a largura do botão para 50% */
+    padding: 15px; /* Aumenta o padding para deixar o botão maior */
+    position: relative;
+    top: 650px;
+    z-index: 1;
+    background-color: #00bcd4;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    transition: background-color 0.3s;
+    width: 25%; /* Mantém a largura para o botão "Faça sua Consulta" */
+    height: 50px;
+    position: relative;
+}
+
+.btn-compromisso:hover {
+    background-color: #0097a7;
+}
+
+/* Estilo para o botão "Faça sua Consulta" */
+.btn-custom {
+    background-color: #00bcd4;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    transition: background-color 0.3s;
+    width: 100%; /* Mantém a largura para o botão "Faça sua Consulta" */
+    height: 50px;
+    position: relative;
+    right: 100px;
+
+   
+    
+}
+
+.btn-custom:hover {
+    background-color: #0097a7;
+}
+
+
+.btn-custom:hover {
+    background-color: #0097a7;
+}
+
+.tudobaixo {
+    padding: 20px;
+    background: #e0f7fa;
+    padding: 20px;
+}
+
+.partedebaixo {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.info, .schedule {
+    padding: 20px;
+}
+
+.info {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.link-column {
+    margin-top: 20px;
+}
+
+.link-column h2 {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.link-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-column li {
+    margin: 5px 0;
+}
+
+.link-column li a {
+    text-decoration: none;
+    color: #00bcd4;
+    transition: color 0.3s;
+}
+
+.link-column li a:hover {
+    color: #0097a7;
+}
+
+.schedule {
+    background-color: #f7fafc;
+    border-radius: 0 0 8px 8px;
+}
+
+.schedule h2 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.schedule ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.schedule li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.schedule li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.schedule li a:hover {
+    transform: scale(1.05);
+}
+
+.schedule li span {
+    color: #666;
+}
+
+button {
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+    
+}
+
+button:hover {
+    background-color: #0097a7;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cabeçalho-nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .cabeçalho-nav img {
+        margin-bottom: 10px;
+    }
+    
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-item {
+        margin: 5px 0;
+    }
+    
+    .btn-primary{
+        width: auto;
+    }
+    .btn-outline-primary {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-container {
+        padding: 15px;
+    }
+    
+    .partedebaixo {
+        flex-direction: column;
+    }
+    
+    .info {
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }   
+}

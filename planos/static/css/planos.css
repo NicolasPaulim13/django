@@ -1,0 +1,145 @@
+.health-plan-section {
+    display: flex;
+    align-items: center;
+    background-color:#78ABC3; /* Cor de fundo azul */
+    padding: 20px;
+    color: white;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+   display: flex;
+   position: relative;
+   height: 110%;
+   width: 70%;
+   left: 100px;
+}
+
+.content {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-left: 110px;
+    color: black;
+}
+
+.content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    margin-left: 170px;
+    color: black;
+}
+
+.content button {
+    background-color: #0EC8DD; 
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 1em;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 250px;
+}
+
+.content button:hover {
+    background-color:#0EC8DD; 
+}
+
+plans-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.plans-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #000000;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.plan-card {
+    background-color:  #a1c4d4;     
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 22%;
+    min-width: 250px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-top: 30px;
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+}
+
+.plan-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.plan-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.plan-card p {
+    font-size: 1em;
+    margin: 5px 0;
+    color: black;
+}
+
+.plan-card h4 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: black;
+}
+
+.plan-card h4 sup {
+    font-size: 0.5em;
+    color: black;
+}
+
+.plan-card button {
+    background-color: #0EC8DD;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 25px;
+}
+
+.plan-card button:hover {
+    background-color: #0EC8DD;
+}
+
+.tudao {
+    margin-top: 40px;
+}
+
+.sorriso img{
+display: flex;
+position: relative;
+right: 60%;
+}

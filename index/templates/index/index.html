@@ -1,0 +1,182 @@
+{% extends 'registration/base.html' %}
+{% load static %}
+
+{% block content %}
+<head>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Faça o Login</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Login:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <label for="password-input">Senha:</label>
+                            <div class="password-container">
+                                <input type="password" class="form-control" id="password-input">
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" class="button-cadastre">Cadastre-se</a>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" id="liveToastBtn">Login</button>
+                        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="toast-header">
+                                    <strong class="me-auto">Sorriso das Graças</strong>
+                                    <small>Agora Mesmo</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                </div>
+                                <div class="toast-body">
+                                    Login feito com Sucesso
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <script>
+                    // Obtém o botão e o toast
+                    var toastTrigger = document.getElementById('liveToastBtn');
+                    var toastLiveExample = document.getElementById('liveToast');
+                    
+                    // Verifica se o botão existe na página
+                    if (toastTrigger) {
+                        toastTrigger.addEventListener('click', function () {
+                            var toast = new bootstrap.Toast(toastLiveExample);
+                            toast.show();
+                        });
+                    }
+                    </script>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="parte1">
+        <div class="conteudo-home">
+            <img class="img-principal" src="{% static  'img/home-principal.jpg' %}" alt="">
+            <h1 class="titulo-home">Odontologia Sorriso das Graças</h1>
+            <h2>Cuidando do Seu Sorriso com Dedicação e Excelência. Nossa equipe de profissionais qualificados
+                oferece
+                tratamentos de alta qualidade para garantir sua saúde bucal e um sorriso radiante.</h2>
+            <button type="button" class="btn btn-outline-primary">Saiba Mais</button>
+        </div>
+    </section>
+    <section class="parte2">
+        <div class="vantagens">
+            <img src="{% static 'img/crianca.jpg' %}" alt="">
+            <h1>Por que você deve escolher nosso serviço odontológico?</h1>
+            <h2>Descubra por que nosso serviço odontológico se destaca dos demais. Da nossa equipe experiente ao nosso
+                equipamento de última geração, oferecemos atendimento excepcional para todas as suas necessidades
+                odontológicas.</h2>
+        </div>
+        <div class="counteiner-vantagens">
+            <div class="vantegem1">
+                <h1> Equipe Especializada e Qualificada</h1>
+                <br>
+                <h2>Nossa equipe é formada por profissionais super experientes que entendem tudo sobre o que fazem. Eles
+                    estão sempre aprendendo coisas novas para te oferecer o melhor atendimento.</h2>
+
+            </div>
+            <div class="vantegem3">
+
+                <h1>Tecnologia de Ponta e Moderna</h1>
+                <br>
+                <h2>Com a nossa tecnologia de ponta, seus problemas são resolvidos mais rápido e com mais precisão.
+                    Nossa
+                    infraestrutura moderna garante um atendimento mais eficiente e confortável para você.</h2>
+
+            </div>
+        </div>
+        <div class="vantagens-img">
+            <img class="tecnologia-img" src="{% static 'img/tecnologia.png' %}" alt="">
+            <img class="equipe-img" src="{% static 'img/equipe.png' %}" alt="">
+        </div>
+
+    </section>
+    <section class="planos">
+        <div class="titulo">
+            <h1><u>Planos</u></h1>
+        </div>
+        <div class="container-planos">
+            <div class="individual">
+                <div class="texto-individual">
+                    <p>Plano</p>
+                    <h1>Individual</h1>
+                </div>
+                <div class="precos-indv">
+                    <p class="moeda-indv">$</p>
+                    <h1>39</h1>
+                    <h2 class="centavos-indv">,99</h2>
+                    <p class="mensalidade-indv">/Mês</p>
+                    <div class="beneficios-indv">
+                        <ul>
+                            <li>Exames orais;</li>
+                            <li>Limpeza e polimento;</li>
+                            <li>Procedimentos restauradores.</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-primary" type="button">Contrate Já</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="familia">
+                <div class="texto-familia">
+                    <p>Plano</p>
+                    <h1>Família</h1>
+                </div>
+                <div class="precos-fam">
+                    <p class="moeda-fam">$</p>
+                    <h1>249</h1>
+                    <h2 class="centavos-fam">,99</h2>
+                    <p class="mensalidade-fam">/Mês</p>
+                    <div class="beneficios-fam">
+                        <ul>
+                            <li>Coroas e Pontes;</li>
+                            <li>Terapia de canal radicular;</li>
+                            <li>Procedimentos restauradores.</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-primary" type="button">Contrate Já</button>
+                    </div>
+                </div>
+            </div>
+            <div class="premium">
+                <div class="texto-premium">
+                    <p>Plano</p>
+                    <h1>Premium</h1>
+                </div>
+                <div class="precos-premium">
+                    <p class="moeda-premium">$</p>
+                    <h1>99</h1>
+                    <h2 class="centavos-premium">,99</h2>
+                    <p class="mensalidade-premium">/Mês</p>
+                    <div class="beneficios-premium">
+                        <ul>
+                            <li> Implantes Dentários;</li>
+                            <li>Odontologia Estética;</li>
+                            <li>Procedimentos ortodônticos.</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-primary" type="button">Contrate Já</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}

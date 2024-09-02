@@ -1,0 +1,38 @@
+{% extends 'registration/base.html' %}
+
+{% block title %}Tratamentos - Sorriso Das Graças{% endblock %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="contact-section">
+    <h1>Contact</h1>
+    <p class="breadcrumb">Home / Contact</p>
+    <div class="contact-container">
+        <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.944655315867!2d4.890932615683049!3d52.37232797978557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c1fc0f9f4b%3A0x24bf704730b64758!2sSingel%20131!5e0!3m2!1spt-BR!2sid!4v1693014851543!5m2!1spt-BR!2sid"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contact-details">
+            <h3>Dentica Clinic Center</h3>
+            <p>Lewistika Panda I Block D No.88 Dermawartani, Clasan. South Tangerang.</p>
+            <p>4733378901 (Call Center)</p>
+            <p>4733378902 (Customer Support)</p>
+            <p>staff@dentica.id</p>
+        </div>
+        <div class="contact-form">
+            <h3>Send us a message</h3>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'js/contatos.js' %}"></script>
+
+{% endblock %}

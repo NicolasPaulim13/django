@@ -1,0 +1,376 @@
+
+.parte1 {
+    position: relative;
+}
+
+.img-principal {
+    width: 100%;
+    object-fit: cover;
+    height: 40%;
+    border-bottom-left-radius: 10vh;
+    border-bottom-right-radius: 10vh;
+}
+
+.conteudo-home h1 {
+    font-family: "PlayfairDisplay";
+    font-size: 375%;
+    width: 30%;
+    position: relative;
+    top: -95vh;
+    left: 5%;
+    color: rgb(255, 255, 255);
+}
+
+.conteudo-home h2 {
+    font-family: "Inter Light";
+    font-size: 1.4rem;
+    font-weight: 100;
+    opacity: 80%;
+    position: relative;
+    top: -95vh;
+    left: 5%;
+    width: 55%;
+    color: rgb(255, 255, 255);
+}
+
+.conteudo-home button {
+    border-radius: 50vh;
+    width: 20%;
+    position: relative;
+    left: 4.5%;
+    top: -92vh;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-color: transparent;
+    font-weight: 600;
+
+}
+
+.conteudo-home button:hover {
+    background-color: #313131;
+    color: white;
+    border-color: transparent;
+    transition: 1000ms;
+}
+
+.vantagens img {
+    position: relative;
+    left: 15%;
+    margin-top: -18%;
+    border-bottom-left-radius: 4em;
+    border-bottom-right-radius: 4em;
+    border-top-right-radius: 4em;
+    border-top-left-radius: 0.5em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+}
+
+.vantagens img:hover {
+    transform: scale(1.1);
+    transition: 800ms;
+}
+
+.vantagens h1 {
+    font-family: "PlayfairDisplay";
+    width: 50%;
+    position: relative;
+    top: -10em;
+    left: 45%;
+}
+
+.vantegem1 {
+    border: 0.1em solid rgba(53, 53, 53, 0.199);
+    border-radius: 1em;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 5%;
+    margin-right: 4%;
+    padding-bottom: 1%;
+}
+
+.vantegem1:hover {
+    transform: scale(1.1);
+    transition: 800ms;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+}
+
+.vantegem3:hover {
+    transform: scale(1.1);
+    transition: 800ms;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+}
+
+
+.vantegem3 {
+    border: 0.1em solid rgba(53, 53, 53, 0.199);
+    border-radius: 1em;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 5%;
+    margin-left: 4%;
+    padding-bottom: 1%;
+}
+
+.vantagens h2 {
+    font-family: "Inter Light";
+    font-weight: 100;
+    opacity: 80%;
+    width: 50%;
+    position: relative;
+    top: -11em;
+    left: 45%;
+}
+
+.counteiner-vantagens {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: stretch;
+    position: relative;
+    top: -9em;
+}
+
+.counteiner-vantagens h1 {
+    font-family: "Poppins Regular";
+    font-weight: 600;
+    font-size: 125%;
+    color: rgb(120, 170, 195);
+}
+
+.counteiner-vantagens h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 130%;
+    width: 100%;
+}
+
+
+.vantagens-img img {
+    width: 4%;
+}
+
+.equipe-img {
+    position: relative;
+    top: -25em;
+    left: 7.5%;
+}
+
+.tecnologia-img {
+    position: relative;
+    top: -24.5em;
+    left: 54%;
+}
+
+section.parte3 p {
+    font-family: "PlayfairDisplay";
+    font-size: 175%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-planos {
+    display: flex;
+    justify-content: space-between;
+    margin: 7%;
+
+}
+
+.texto-individual,
+.texto-familia,
+.texto-premium p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.texto h1 {
+    font-family: "Inter Regular";
+}
+
+.texto-individual,
+.texto-familia,
+.texto-premium {
+    align-items: center;
+    color: white;
+    background-color: black;
+    padding-left: 4em;
+    padding-right: 4rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-top-left-radius: 1.3em;
+    border-top-right-radius: 1.3em;
+}
+
+section.planos {
+    position: relative;
+    top: -5em;
+}
+
+.titulo h1 {
+    font-family: "PlayfairDisplay";
+}
+
+.individual {
+    position: relative;
+    top: 3em;
+}
+
+.premium {
+    position: relative;
+    top: 3em;
+}
+
+.premium:hover {
+    transform: scale(1.1);
+    transition: 800ms;
+}
+
+.familia:hover {
+    transform: scale(1.1);
+    transition: 800ms;
+}
+
+.individual:hover {
+    transform: scale(1.1);
+    transition: 800ms;
+}
+
+
+.precos-indv {
+    text-align: center;
+    border: 0.1em solid rgba(53, 53, 53, 0.199);
+    padding-bottom: 2em;
+    border-bottom-left-radius: 1.3em;
+    border-bottom-right-radius: 1.3em;
+}
+
+.precos-indv button {
+    background-color: #78aac3;
+    border-color: #78aac3;
+}
+
+.precos-indv button:hover {
+    background-color: #4852c2;
+    border-color: #4852c2;
+    transition: 700ms;
+}
+
+.moeda-indv {
+    position: relative;
+    top: 2.87em;
+    right: 1.88em;
+    font-weight: 500;
+}
+
+.centavos-indv {
+    position: relative;
+    top: -2.38em;
+    left: 1.8em;
+    font-size: 1.3em;
+}
+
+.mensalidade-indv {
+    font-weight: 400;
+    position: relative;
+    top: -2.5em;
+}
+
+.beneficios-indv ul li {
+    position: relative;
+
+}
+
+.precos-fam {
+    text-align: center;
+    border: 0.1em solid rgba(53, 53, 53, 0.199);
+    padding-bottom: 2em;
+    border-bottom-left-radius: 1.3em;
+    border-bottom-right-radius: 1.3em;
+}
+
+.precos-fam button {
+    background-color: #78aac3;
+    border-color: #78aac3;
+}
+
+.precos-fam button:hover {
+    background-color: #4852c2;
+    border-color: #4852c2;
+    transition: 700ms;
+}
+
+.moeda-fam {
+    position: relative;
+    top: 2.87em;
+    right: 2.5em;
+    font-weight: 500;
+}
+
+.centavos-fam {
+    position: relative;
+    top: -2.38em;
+    left: 2.3em;
+    font-size: 1.3em;
+}
+
+.mensalidade-fam {
+    font-weight: 400;
+    position: relative;
+    top: -2.5em;
+}
+
+.beneficios-fam ul li {
+    position: relative;
+
+}
+
+.precos-premium {
+    text-align: center;
+    border: 0.1em solid rgba(53, 53, 53, 0.199);
+    padding-bottom: 2em;
+    border-bottom-left-radius: 1.3em;
+    border-bottom-right-radius: 1.3em;
+}
+
+.precos-premium button {
+    background-color: #78aac3;
+    border-color: #78aac3;
+}
+
+.precos-premium button:hover {
+    background-color: #4852c2;
+    border-color: #4852c2;
+    transition: 700ms;
+}
+
+.moeda-premium {
+    position: relative;
+    top: 2.87em;
+    right: 1.8em;
+    font-weight: 500;
+}
+
+.centavos-premium {
+    position: relative;
+    top: -2.38em;
+    left: 1.8em;
+    font-size: 1.3em;
+}
+
+.mensalidade-premium {
+    font-weight: 400;
+    position: relative;
+    top: -2.5em;
+}
+
+.beneficios-premium ul li {
+    position: relative;
+
+}
+

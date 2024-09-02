@@ -1,0 +1,164 @@
+{% extends 'registration/base.html' %}
+
+{% block title %}Tratamentos - Sorriso Das Graças{% endblock %}
+
+{% load static %}
+
+{% block content %}
+
+<div
+      class="container d-flex flex-column justify-content-center align-items-center min-vh-100"
+    >
+      <div class="breadcrumb-container mb-4 text-center">
+        <h1 class="mb-2">Compromisso</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Compromisso
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <button type="submit" class="btn btn-primary btn-compromisso">
+        ENVIAR MEU COMPROMISSO
+      </button>
+
+      <div class="card p-4 shadow-lg form-container">
+        <form id="contactForm" class="row g-3">
+          <div class="col-12">
+            <label for="name" class="form-label">Nome</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="por exemplo James Brown"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <label for="email" class="form-label">E-mail</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="por exemplo, usuário@email.com"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <label for="phone" class="form-label">Número de telefone</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              placeholder="por exemplo 082998029XXX"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <label for="subject" class="form-label">Assunto</label>
+            <input
+              type="text"
+              class="form-control"
+              id="subject"
+              placeholder="por exemplo Problema com chaves"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <label for="message" class="form-label">Mensagem</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="4"
+              placeholder=""
+              required
+            ></textarea>
+          </div>
+          <div class="col-12 d-grid"></div>
+        </form>
+      </div>
+    </div>
+
+    <div class="tudobaixo">
+      <div class="partedebaixo">
+        <div class="info">
+          <h1>Sorriso Das Graças</h1>
+          <p>
+            Somos profissionais de saúde experientes e certificados
+            internacionalmente
+          </p>
+          <address>
+            <p>
+              Lewistika Panda I Bloco D No.88 Dermawartani, Clasan. Tangerang do
+              Sul.
+            </p>
+            <p>4733378901 (Central de Atendimento)</p>
+            <p>4733378902 (Suporte ao Cliente)</p>
+            <p><a href="mailto:equipe@dentica.id">equipe@dentica.id</a></p>
+          </address>
+          <div class="links">
+            <div class="link-column">
+              <h2>Página</h2>
+              <ul>
+                <li><a href="#sobre-nos">Sobre nós</a></li>
+                <li>Serviços</li>
+                <li>Contate-nos</li>
+                <li>
+                  <a href="#perguntas-frequentes">Perguntas frequentes</a>
+                </li>
+                <li>404</li>
+              </ul>
+            </div>
+            <div class="link-column">
+              <h2>Nosso Dentista</h2>
+              <ul>
+                <li>Reza Mahendra</li>
+                <li>Sari Merliana</li>
+                <li>Daniel Thompson</li>
+                <li>James Marrom</li>
+                <li>David Anderson</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="schedule">
+          <h2>Agendar</h2>
+          <ul>
+            <li>
+              <a href="#segunda-feira"
+                >Segunda-feira <span>08:00 - 20:00</span></a
+              >
+            </li>
+            <li>
+              <a href="#terca-feira">Terça-feira <span>08:00 - 20:00</span></a>
+            </li>
+            <li>
+              <a href="#quarta-feira"
+                >Quarta-feira <span>08:00 - 20:00</span></a
+              >
+            </li>
+            <li>
+              <a href="#quinta-feira"
+                >Quinta-feira <span>08:00 - 20:00</span></a
+              >
+            </li>
+            <li>
+              <a href="#sexta-feira">Sexta-feira <span>08:00 - 20:00</span></a>
+            </li>
+            <li>
+              <a href="#sabado">Sábado <span>10:00 - 16:00</span></a>
+            </li>
+            <li>
+              <a href="#domingo">Domingo <span>10:00 - 16:00</span></a>
+            </li>
+          </ul>
+          <button id="bookButton">MARQUE UMA CONSULTA</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="sorriso.js"></script>
+
+    {% endblock %}
