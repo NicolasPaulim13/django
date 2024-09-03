@@ -217,10 +217,6 @@ button {
     
 }
 
-button:hover {
-    background-color: #0097a7;
-}
-
 /* Responsividade */
 @media (max-width: 768px) {
     .cabeçalho-nav {

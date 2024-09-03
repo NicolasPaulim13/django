@@ -1,4 +1,4 @@
-
+/* Estilos Globais */
 .parte1 {
     position: relative;
 }
@@ -11,6 +11,7 @@
     border-bottom-right-radius: 10vh;
 }
 
+/* Estilos para telas grandes */
 .conteudo-home h1 {
     font-family: "PlayfairDisplay";
     font-size: 375%;
@@ -29,7 +30,7 @@
     position: relative;
     top: -120vh;
     left: 40%;
-    width: 35%;
+    width: 40%;
     height: 1%;
     color: rgb(255, 255, 255);
 }
@@ -44,7 +45,6 @@
     background-color: #ffffff;
     border-color: transparent;
     font-weight: 600;
-
 }
 
 .conteudo-home button:hover {
@@ -54,9 +54,222 @@
     transition: 1000ms;
 }
 
+/* Estilos para telas médias */
+@media (max-width: 1024px) {
+    .conteudo-home h1 {
+        font-size: 300%;
+        width: 40%;
+        top: -70vh;
+        left: 5%;
+    }
+
+    .conteudo-home h2 {
+        font-size: 1.5rem;
+        top: -85vh;
+        left: 10%;
+        width: 80%;
+    }
+
+    .conteudo-home button {
+        width: 30%;
+        top: -85vh;
+        left: 5%;
+    }
+
+    .vantagens img {
+        left: 5%;
+        margin-top: -10%;
+        width: 90%;
+    }
+
+    .vantagens h1 {
+        width: 90%;
+        top: -8em;
+        left: 5%;
+        text-align: center;
+    }
+
+    .vantagens h2 {
+        width: 90%;
+        top: -9em;
+        left: 5%;
+        text-align: center;
+    }
+
+    .counteiner-vantagens {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+        top: -5em;
+    }
+
+    .container-planos {
+        flex-direction: column;
+        margin: 2%;
+    }
+}
+
+/* Estilos para telas pequenas */
+@media (max-width: 768px) {
+    .conteudo-home h1 {
+        font-size: 250%;
+        width: 80%;
+        top: -60vh;
+        left: 10%;
+    }
+
+    .conteudo-home h2 {
+        font-size: 1.4rem;
+        top: -70vh;
+        width: 80%;
+        left: 10%;
+    }
+
+    .conteudo-home button {
+        width: 60%;
+        top: -70vh;
+        left: 10%;
+    }
+
+    .vantagens img {
+        width: 90%;
+        left: 5%;
+    }
+
+    .vantagens h1 {
+        font-size: 150%;
+        top: -6em;
+        left: 5%;
+        text-align: center;
+    }
+
+    .vantagens h2 {
+        font-size: 1.1rem;
+        top: -7em;
+        left: 5%;
+        text-align: center;
+    }
+
+    .counteiner-vantagens {
+        flex-direction: column;
+        padding-left: 2%;
+        padding-right: 2%;
+        top: -5em;
+    }
+
+    .container-planos {
+        flex-direction: column;
+        margin: 1%;
+    }
+
+    .texto-individual,
+    .texto-familia,
+    .texto-premium {
+        padding: 0.5em;
+    }
+
+    .precos-indv,
+    .precos-fam,
+    .precos-premium {
+        padding-bottom: 0.5em;
+    }
+}
+.precos-indv h1{
+    position: relative;
+    top: 10px;
+    right: 25px;
+}
+.precos-indv h2{
+    position: relative;
+    top: -30px;
+    left: 38px;
+}
+
+.precos-indv p{
+    position: relative;
+    top: 27px;
+    left: 100px;
+}
+
+.precos-fam h1{
+    position: relative;
+    right:25px;
+    top: -5px;
+}
+.centavos-fam {
+    position: relative;
+    left: 50px;
+    
+}
+
+.precos-premium h1{
+    position: relative;
+    right: 20px;
+    top: -10px;
+}
+
+.centavos-premium{
+    position: relative;
+    left: 38px;
+    
+}
+
+
+/* Estilos para telas muito pequenas */
+@media (max-width: 576px) {
+    .conteudo-home h1 {
+        font-size: 200%;
+        width: 100%;
+        top: -40vh;
+        left: 5%;
+    }
+
+    .conteudo-home h2 {
+        font-size: 1.2rem;
+        top: -40vh;
+        width: 90%;
+        left: 5%;
+    }
+
+    .conteudo-home button {
+        width: 80%;
+        top: -40vh;
+        left: 5%;
+    }
+
+    .vantagens img {
+        
+        width: 95%;
+        left: 2.5%;
+        margin-top: -5%;
+    }
+
+    .vantagens h1,
+    .vantagens h2 {
+        font-size: 120%;
+        top: -4em;
+        left: 2.5%;
+        text-align: center;
+    }
+
+    .counteiner-vantagens {
+        flex-direction: column;
+        padding-left: 2%;
+        padding-right: 2%;
+        top: -3em;
+    }
+
+    .container-planos {
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+/* Estilos adicionais para garantir a responsividade */
 .vantagens img {
     position: relative;
     left: 15%;
+    top: -10em;
     margin-top: -18%;
     border-bottom-left-radius: 4em;
     border-bottom-right-radius: 4em;
@@ -74,41 +287,8 @@
     font-family: "PlayfairDisplay";
     width: 50%;
     position: relative;
-    top: -12em;
-    left: 30%;
-}
-
-.vantegem1 {
-    border: 0.1em solid rgba(53, 53, 53, 0.199);
-    border-radius: 1em;
-    padding-right: 3%;
-    padding-left: 3%;
-    padding-top: 5%;
-    margin-right: 4%;
-    padding-bottom: 1%;
-}
-
-.vantegem1:hover {
-    transform: scale(1.1);
-    transition: 800ms;
-    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
-}
-
-.vantegem3:hover {
-    transform: scale(1.1);
-    transition: 800ms;
-    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
-}
-
-
-.vantegem3 {
-    border: 0.1em solid rgba(53, 53, 53, 0.199);
-    border-radius: 1em;
-    padding-right: 3%;
-    padding-left: 3%;
-    padding-top: 5%;
-    margin-left: 4%;
-    padding-bottom: 1%;
+    top: -14em;
+    left: 45%;
 }
 
 .vantagens h2 {
@@ -117,8 +297,25 @@
     opacity: 80%;
     width: 50%;
     position: relative;
-    top: -13em;
-    left: 25%;
+    top: -15em;
+    left: 40%;
+}
+
+.vantegem1,
+.vantegem3 {
+    border: 0.1em solid rgba(53, 53, 53, 0.199);
+    border-radius: 1em;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+.vantegem1:hover,
+.vantegem3:hover {
+    transform: scale(1.1);
+    transition: 800ms;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
 }
 
 .counteiner-vantagens {
@@ -143,7 +340,6 @@
     font-size: 130%;
     width: 100%;
 }
-
 
 .vantagens-img img {
     width: 4%;
@@ -179,7 +375,6 @@ section.parte3 p {
     display: flex;
     justify-content: space-between;
     margin: 7%;
-
 }
 
 .texto-individual,
@@ -217,120 +412,21 @@ section.planos {
     font-family: "PlayfairDisplay";
 }
 
-.individual {
-    position: relative;
-    top: 3em;
-}
-
+.individual,
 .premium {
     position: relative;
     top: 3em;
 }
 
-.premium:hover {
-    transform: scale(1.1);
-    transition: 800ms;
-}
-
-.familia:hover {
-    transform: scale(1.1);
-    transition: 800ms;
-}
-
+.premium:hover,
+.familia:hover,
 .individual:hover {
     transform: scale(1.1);
     transition: 800ms;
 }
 
-
-.precos-indv {
-    text-align: center;
-    border: 0.1em solid rgba(53, 53, 53, 0.199);
-    padding-bottom: 2em;
-    border-bottom-left-radius: 1.3em;
-    border-bottom-right-radius: 1.3em;
-}
-
-.precos-indv button {
-    background-color: #78aac3;
-    border-color: #78aac3;
-}
-
-.precos-indv button:hover {
-    background-color: #4852c2;
-    border-color: #4852c2;
-    transition: 700ms;
-}
-
-.moeda-indv {
-    position: relative;
-    top: 2.87em;
-    right: 1.88em;
-    font-weight: 500;
-}
-
-.centavos-indv {
-    position: relative;
-    top: -2.38em;
-    left: 1.8em;
-    font-size: 1.3em;
-}
-
-.mensalidade-indv {
-    font-weight: 400;
-    position: relative;
-    top: -2.5em;
-}
-
-.beneficios-indv ul li {
-    position: relative;
-
-}
-
-.precos-fam {
-    text-align: center;
-    border: 0.1em solid rgba(53, 53, 53, 0.199);
-    padding-bottom: 2em;
-    border-bottom-left-radius: 1.3em;
-    border-bottom-right-radius: 1.3em;
-}
-
-.precos-fam button {
-    background-color: #78aac3;
-    border-color: #78aac3;
-}
-
-.precos-fam button:hover {
-    background-color: #4852c2;
-    border-color: #4852c2;
-    transition: 700ms;
-}
-
-.moeda-fam {
-    position: relative;
-    top: 2.87em;
-    right: 2.5em;
-    font-weight: 500;
-}
-
-.centavos-fam {
-    position: relative;
-    top: -2.38em;
-    left: 2.3em;
-    font-size: 1.3em;
-}
-
-.mensalidade-fam {
-    font-weight: 400;
-    position: relative;
-    top: -2.5em;
-}
-
-.beneficios-fam ul li {
-    position: relative;
-
-}
-
+.precos-indv,
+.precos-fam,
 .precos-premium {
     text-align: center;
     border: 0.1em solid rgba(53, 53, 53, 0.199);
@@ -339,39 +435,47 @@ section.planos {
     border-bottom-right-radius: 1.3em;
 }
 
+.precos-indv button,
+.precos-fam button,
 .precos-premium button {
     background-color: #78aac3;
     border-color: #78aac3;
 }
 
+.precos-indv button:hover,
+.precos-fam button:hover,
 .precos-premium button:hover {
     background-color: #4852c2;
     border-color: #4852c2;
     transition: 700ms;
 }
 
+.moeda-indv,
+.moeda-fam,
 .moeda-premium {
     position: relative;
     top: 2.87em;
-    right: 1.8em;
     font-weight: 500;
 }
 
+.centavos-indv,
+.centavos-fam,
 .centavos-premium {
     position: relative;
     top: -2.38em;
-    left: 1.8em;
     font-size: 1.3em;
 }
 
+.mensalidade-indv,
+.mensalidade-fam,
 .mensalidade-premium {
     font-weight: 400;
     position: relative;
-    top: -2.5em;
+    top: 10em;
 }
 
+.beneficios-indv ul li,
+.beneficios-fam ul li,
 .beneficios-premium ul li {
     position: relative;
-
 }
-

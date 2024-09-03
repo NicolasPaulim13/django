@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'contatos',
     'consulta',
     'cadastro',
+    'cadastro_adm',
+
 ]
 
 MIDDLEWARE = [

@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    top: 100px;
+    top: px;
 }
 
 .titulosobrenos {
@@ -51,6 +51,7 @@
     color: #000000;
     flex-basis: 100%;
     text-align: center;
+    
 }
 
 .sobre-nos p {
@@ -75,6 +76,10 @@
     justify-content: space-between;
     gap: 20px;
     margin-top: 50px;
+}
+.titulosobrenos h1{
+    position: relative;
+    top: -35px;
 }
 
 .textossobrenos > div {

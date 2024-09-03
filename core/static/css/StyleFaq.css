@@ -36,7 +36,7 @@
 /* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: white;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -126,6 +126,8 @@ header.container-nav {
     position: relative;
     left: 40%;
     top: -10vh;
+    width:  10px;
+    height: 50px;
 }
 
 
@@ -133,13 +135,14 @@ header.container-nav {
     .container-nav {
         height: auto;
     }
+
 }
 
 /* Estilos para telas menores */
 @media (max-width: 768px) {
     .container-nav img {
-        width: 7.3em;
-        height: 6.2em;
+        width: 10.3em;
+        height: 5.2em;
         position: relative;
         top: 2em;
     }
@@ -179,13 +182,14 @@ header.container-nav {
     .hamburger-menu {
         display: block;
     }
+    
 
     .nav.active {
         display: flex;
     }
 
     .container-nav button {
-        width: 100%;
+        width: 20%;
         margin-top: 10px;
     }
 }
@@ -529,3 +533,7 @@ button[type="reset"]:hover {
     background-color: #E2E6EA;
 }
 
+.hamburger-menu button:hover{
+    background-color: transparent;
+    color: transparent;
+}

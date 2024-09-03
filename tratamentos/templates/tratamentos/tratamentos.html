@@ -1,8 +1,15 @@
 {% extends 'registration/base.html' %} {% block title %}Tratamentos - Sorriso
 Das Graças{% endblock %} {% load static %} {% block content %}
 
+<div class="total">
 <section class="tratamentos-container">
-  <div class="tratamento">
+  
+  <div class="titulu">
+    <h1>Tratamentos</h1>
+  <a href="{% url 'index' %}">Home</a> / <a href="#">Perguntas frequentes</a>
+  </div>
+  
+  <div class="clareamento">
     <img src="{% static 'img/dente1.png' %}" alt="Clareamento 100% a laser" />
     <h3>Clareamento 100% a laser</h3>
     <p>
@@ -10,12 +17,12 @@ Das Graças{% endblock %} {% load static %} {% block content %}
       rapidamente
     </p>
   </div>
-  <div class="tratamento">
+  <div class="endodontia">
     <img src="{% static 'img/dente2.png' %}" alt="Endodontia" />
     <h3>Endodontia</h3>
     <p>As técnicas mais modernas e seguras para o tratamento de canal</p>
   </div>
-  <div class="tratamento">
+  <div class="CirurgiaOral">
     <img src="{% static 'img/dente3.png' %}" alt="Cirurgia Oral" />
     <h3>Cirurgia Oral</h3>
     <p>
@@ -23,7 +30,7 @@ Das Graças{% endblock %} {% load static %} {% block content %}
       cavidade oral e estruturas anexas
     </p>
   </div>
-  <div class="tratamento">
+  <div class="implantes">
     <img src="{% static 'img/dente4.png' %}" alt="Implantes" />
     <h3>Implantes</h3>
     <p>
@@ -39,7 +46,7 @@ Das Graças{% endblock %} {% load static %} {% block content %}
       da mandíbula.
     </p>
   </div>
-  <div class="tratamento">
+  <div class="protese">
     <img src="{% static 'img/dente6.png' %}" alt="Próteses" />
     <h3>Próteses</h3>
     <p>
@@ -48,5 +55,6 @@ Das Graças{% endblock %} {% load static %} {% block content %}
     </p>
   </div>
 </section>
+</div>
 
 {% endblock %}

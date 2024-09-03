@@ -10,6 +10,11 @@ body {
     margin: 60px auto;
     padding: 20px;
 }
+.breadcrumb-contact{
+    position: relative;
+    top: 0px;
+    left: 480px;
+}
 
 .contact-section h1 {
     font-size: 36px;
@@ -37,9 +42,9 @@ body {
     gap: 20px; /* Espaçamento entre o mapa e o formulário */
 }
 
-.contact-map {
-    flex: 1;
-    max-width: 45%; /* Ajuste do tamanho do mapa */
+.mapa {
+    flex: 5;
+    max-width: 45%;
 }
 
 .contact-map iframe {
@@ -105,9 +110,7 @@ body {
     cursor: pointer;
 }
 
-.contact-form button:hover {
-    background-color: #0097a7;
-}
+
 
 @media (max-width: 768px) {
     .contact-container {

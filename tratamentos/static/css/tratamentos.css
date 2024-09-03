@@ -1,3 +1,41 @@
+body {
+    box-shadow: none;
+    color: whit;
+
+}
+.total {
+    position: relative;
+    height: 1250px;
+
+}
+.titulu {
+    position: relative;
+    left: 40%;
+    box-shadow: none;
+    height: 10px;
+    left: 28%;
+   
+}
+.titulu h1 {
+    color: #333;
+    box-shadow: none;
+
+    
+}
+
+.titulu a {
+    color: #000;
+    text-decoration: none;
+ 
+   
+}
+
+.titulu a:hover {
+    text-decoration: underline;
+    
+    
+}
+
 .tratamentos-container {
     display: flex;
     flex-wrap: wrap;
@@ -5,6 +43,131 @@
     padding: 50px;
     background-color: #ffffff;
     gap: 50px;
+    height: 1300px;
+   
+   
+}
+
+.protese{
+    background-color: #c9e9f8; 
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s;
+    position: relative;
+    top: -811px;
+    right: 390px;
+}
+
+.protese img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.protese:hover {
+    transform: scale(1.05);
+}   
+
+.clareamento{
+    background-color: #c9e9f8; 
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s;
+    position: relative;
+    top: 120px;
+    right: -8px;
+    height: 295px;
+}
+.clareamento img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+
+}
+
+.dente1 img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.clareamento:hover {
+    transform: scale(1.05);
+}
+
+.endodontia {
+    position: relative;
+    background-color: #c9e9f8; 
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 36px;
+    width: 300px;
+    transition: transform 0.3s;
+    margin-top: 10%;
+    right:-15px;
+}
+
+.endodontia:hover {
+    transform: scale(1.05);
+}
+
+.endodontia img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.CirurgiaOral {
+    background-color: #c9e9f8; 
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s;
+    margin-top: 10%;
+    position: relative;
+    right: 40px;
+    top: -100px;
+}
+
+.CirurgiaOral:hover {
+    transform: scale(1.05);
+}
+
+.CirurgiaOral img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.implantes {
+    background-color: #c9e9f8; 
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s;
+    margin-top: 10%;
+    position: relative;
+    right: 33px;
+    top: -100px;
+}
+
+.implantes:hover {
+    transform: scale(1.05);
+}
+
+.implantes img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
 }
 
 .tratamento {
@@ -15,6 +178,10 @@
     padding: 20px;
     width: 300px;
     transition: transform 0.3s;
+    margin-top: 10%;
+    left: -15px;
+    top: -100px;
+    position: relative;
 }
 
 .tratamento:hover {
