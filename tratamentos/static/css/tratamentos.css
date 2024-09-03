@@ -16,6 +16,10 @@ body {
     left: 28%;
    
 }
+.oine {
+    position: relative;
+    left: 20%;
+}
 .titulu h1 {
     color: #333;
     box-shadow: none;
@@ -204,4 +208,6 @@ body {
     font-size: 1em;
     color: #000000; 
     margin-bottom: 20px;
+    position: relative;
+    right: 12em;
 }

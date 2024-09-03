@@ -6,9 +6,10 @@ Das Graças{% endblock %} {% load static %} {% block content %}
   
   <div class="titulu">
     <h1>Tratamentos</h1>
-  <a href="{% url 'index' %}">Home</a> / <a href="#">Perguntas frequentes</a>
+    <div class="oine">
+  <a href="{% url 'index' %}">Home</a> / <a href="{% url 'tratamentos' %}">Tratamentos</a>
   </div>
-  
+</div>
   <div class="clareamento">
     <img src="{% static 'img/dente1.png' %}" alt="Clareamento 100% a laser" />
     <h3>Clareamento 100% a laser</h3>

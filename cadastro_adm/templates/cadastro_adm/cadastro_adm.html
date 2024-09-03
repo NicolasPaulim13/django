@@ -5,41 +5,50 @@
 {% load static %}
 
 {% block content %}
-<div class="full-screen-image">
-    <img src="{% static 'img/loginImg.jpg' %}" alt="Imagem de fundo">
-    <div class="login-container">
+<div class="tudis">
+        <div class="login-container">
         <!-- Logo da página de login -->
         <img src="https://via.placeholder.com/100" alt="Logo">
         <!-- Título da página -->
-        <h2>Login Administrador</h2>
+        <h2>Login Médico</h2>
         <!-- Formulário de login -->
         <form method="post">
             {% csrf_token %}
             <input type="text" name="username" placeholder="Nome de usuário" required>
             <input type="password" name="password" placeholder="Senha" required>
-            <button type="submit">Entrar</button>
+            <button type="submit" class="entrar-button">Entrar</button>
         </form>
 
         <!-- Exibição de erros no formulário -->
         {% if form.errors %}
-        <div class="error">
-            <p>Usuário ou senha incorretos. Tente novamente.</p>
-        </div>
+            <div class="error">
+                <p>Usuário ou senha incorretos. Tente novamente.</p>
+            </div>
         {% endif %}
 
         <!-- Seção de login por redes sociais -->
         <div class="social-login">
-            <p>Ou entre com:</p>
+            <p>Ou entre com:</pg>
             <div class="social-buttons">
-                <button class="facebook">Facebook</button>
-                <button class="google">Google</button>
+                <p><img src="https://img.icons8.com/?size=100&id=17949&format=png&color=000000" alt="">Sign in</p>
+                <p><img src="https://img.icons8.com/?size=100&id=95294&format=png&color=000000" alt="">Sign in</p>
             </div>
         </div>
 
         <!-- Link para registro de novo usuário -->
         <div class="signup-link">
             <p>Não tem uma conta? <a href="#">Registre-se aqui</a></p>
+            <p>Dentista? <a href="#">Acesse o painel exclusivo aqui</a></p>
         </div>
     </div>
 </div>
-{% endblock %}
+
+<div class="login-buttons-container">
+        <div class="login-buttons-container">
+            <a href="{% url 'cadastro' %}" class="paciente">Login Paciente</a>
+            <a href="{% url 'cadastro_adm' %}" class="medico">Login Médico</a>
+        </div>
+        
+    </div>
+
+    {% endblock %}

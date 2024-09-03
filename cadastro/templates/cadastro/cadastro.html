@@ -6,24 +6,24 @@
 
 {% block content %}
 <div class="tudis">
-        <div class="login-container">
+    <div class="login-container">
         <!-- Logo da página de login -->
         <img src="https://via.placeholder.com/100" alt="Logo">
         <!-- Título da página -->
-        <h2>Sign In</h2>
+        <h2>Login Paciente</h2>
         <!-- Formulário de login -->
         <form method="post">
             {% csrf_token %}
             <input type="text" name="username" placeholder="Nome de usuário" required>
             <input type="password" name="password" placeholder="Senha" required>
-            <button type="submit" class="entrar-button">Entrar</button>
+           <button type="submit" class="entrar-button">Entrar</button> 
         </form>
 
         <!-- Exibição de erros no formulário -->
         {% if form.errors %}
-            <div class="error">
-                <p>Usuário ou senha incorretos. Tente novamente.</p>
-            </div>
+        <div class="error">
+            <p>Usuário ou senha incorretos. Tente novamente.</p>
+        </div>
         {% endif %}
 
         <!-- Seção de login por redes sociais -->
@@ -43,4 +43,12 @@
     </div>
 </div>
 
-    {% endblock %}
+    <div class="login-buttons-container">
+        <div class="login-buttons-container">
+            <a href="{% url 'cadastro' %}" class="paciente">Login Paciente</a>
+            <a href="{% url 'cadastro_adm' %}" class="medico">Login Médico</a>
+        </div>
+
+    </div>
+
+{% endblock %}

@@ -7,8 +7,12 @@
 {% block content %}
 
 <div class="contact-section">
-    <h1>Contato</h1>
-    <p class="breadcrumb-contact">Home/Contato</p>
+    <div class="titulao">
+    <h1>Contatos</h1>
+    <nav>
+      <a href="{% url 'index' %}">Home</a> / <a href="{% url 'contatos' %}">Contatos</a>
+    </nav>
+</div>
     <div class="contact-container">
         <div class="mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.334373981046!2d-46.60093262489113!3d-23.55643147880329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce594987aded63%3A0xbbff953e0ff625f0!2sEscola%20Senai%20%22Morvan%20Figueiredo%22!5e0!3m2!1spt-BR!2sbr!4v1725368932792!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

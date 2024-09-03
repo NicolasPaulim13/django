@@ -1,3 +1,239 @@
+@font-face {
+    font-family: "Prosto One";
+    src: url("fonts/ProstoOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Flex";
+    src: url("fonts/RobotoFlex-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Poppins Regular";
+    src: url("fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url("fonts/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inter Regular";
+    src: url("fonts/Inter_28pt-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inter Light";
+    src: url("fonts/Inter_28pt-Light.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url("fonts/Montserrat-Regular.ttf");
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.faq-content {
+    background-color: #b2dae5;
+    padding: 20px;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.highlight {
+    color: #d9534f;
+    background: transparent;
+}
+/* parte de cima */
+
+.tratamentos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+    background-color: #ffffff;
+    gap: 50px;
+}
+
+.tratamento {
+    background-color: #c9e9f8; 
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.tratamento:hover {
+    transform: scale(1.05);
+}
+
+.tratamento img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.tratamento h3 {
+    font-size: 1.5em;
+    color: #000000; 
+    margin-bottom: 10px;
+}
+
+.tratamento p {
+    font-size: 1em;
+    color: #000000; 
+    position: relative;
+    left: 40%;
+}
+/* parte de cima */
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.faq-content {
+    background-color: #b2dae5;
+    padding: 20px;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.highlight {
+    color: #d9534f;
+    background: transparent;
+}
+
+.questions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.questions ul {
+    list-style: none;
+    padding: 0;
+    width: 45%;
+}
+
+.questions li {
+    background: url('checkmark.png') no-repeat left center;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.2em;
+    margin-top: 7px;
+}
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+} 
+
+@media (max-width: 768px) {
+    .sorriso {
+        position: relative;
+        right: 20em;
+    }
+
+    .questions ul {
+        width: 100%;
+    }
+}
+
+.faq-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.faq-container {
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+.faq-container h1{
+    position: relative;
+    left: 35%;
+}
+
+
+.pergunta {
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resposta {
+    margin-top: 10px;
+    display: none;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.resposta.active {
+    display: block;
+}
+
+.icon {
+    transition: transform 0.3s ease;
+}
+
+.icon.rotate {
+    transform: rotate(180deg);
+}
+
+/* parte de cima */
+
 .health-plan-section {
     display: flex;
     align-items: center;
@@ -142,4 +378,212 @@ plans-section {
 display: flex;
 position: relative;
 right: 60%;
+}
+
+
+footer{
+    background-color: rgba(221, 221, 221, 0.411);
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+    padding: 3rem 2rem;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nome-footer h1{
+    font-family:  "Poppins", sans-serif;
+    font-weight: 700;
+    width: 30%;
+    text-align: center;
+}
+
+.nome-footer{
+    width: 10%;
+}
+.redes-sociais{
+    display: flex;
+    color: #898989;
+    justify-content: flex-start;
+    margin-top: 1rem;   
+}
+
+.redes-sociais svg{
+    width: 1.8rem;
+    height: 1.8rem;
+    width: 3.7rem;
+    position: relative;
+    left: -0.6rem;
+}
+
+.facebook svg:hover,
+.linkedin svg:hover,
+.twitter svg:hover,
+.email svg:hover{
+    color: rgb(53, 90, 175);
+    transform: scale(1.3);
+    transition: 800ms;
+}
+
+.services, .about, .store{
+    margin-top: 1rem;
+    margin-right: 100px;
+}
+
+.services h1, .about h1, .store h1{
+    font-family: "Montserrat Regular";
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.services a, .about a, .store a{
+    font-family: "Inter Regular";
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8rem;
+}
+
+.services a:hover, .about a:hover{
+    color: #3a5bcccc;
+    transition: 500ms;
+}
+
+.store img{
+    width: 14%;
+}
+
+.copyright{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.copyright h1{
+    font-size: 0.9em;
+}
+
+/* Responsividade para o rodapé */
+@media (max-width: 768px) {
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nome-footer h1 {
+        width: 100%;
+        margin-bottom: 1rem;
+    position: relative;
+    right: 160%;
+    text-align: center;
+    }
+
+    .services, .about, .store {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .services h1, .about h1, .store h1 {
+        font-size: 1.3rem;
+        
+    }
+
+    .services a, .about a {
+        align-items: center;
+    }
+
+    .store img {
+        width: 20%;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .redes-sociais {
+        justify-content: center;
+    }
+
+    .services h1, .about h1, .store h1 {
+        font-size: 1.1rem;
+    }
+
+    .store img {
+        width: 30%;
+    }
+
+    .copyright h1 {
+        font-size: 0.8em;
+    }
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+}
+
+#togglePassword {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.conteudo h1{
+    font-family: "Poppins Regular";
+    color: #343A40;
+    text-align: center;
+    
+}
+
+.conteudo p{
+    font-family: "Roboto Flex";
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+button[type="submit"] {
+    background-color: #78ABC3;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10vh;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-family: "Roboto Flex";
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button[type="submit"]:hover {
+    background-color: #69C4D3;
+}
+
+button[type="reset"] {
+    background-color: #F8F9FA;
+    color: #343A40;
+    border: 1px solid #343A40;
+    border-radius: 10vh;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-family: "Roboto Flex";
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button[type="reset"]:hover {
+    background-color: #E2E6EA;
+}
+
+footer {
+    margin-top: 30px;
 }
