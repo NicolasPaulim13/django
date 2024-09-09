@@ -6,14 +6,17 @@
 
 {% block content %}
 
-<nav aria-label="breadcrumb" class="breadcrumb-container">
-    <ol class="breadcrumb">
+<div class="breadcrumb-container mb-4 text-center">
+  <h1 class="mb-2">Sobre Nós</h1>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb justify-content-center">
       <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Sobre nós</li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="{% url 'sobrenos' %}">
+        Sobre Nós</a>
+      </li>
     </ol>
   </nav>
-  <div class="titulosobrenos"><h1>Sobre Nós</h1></div>
-
+</div>
   <section class="sobre-nos">
     <div class="container">
       <div class="row">

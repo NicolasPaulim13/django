@@ -162,7 +162,7 @@ header.container-nav {
         top: 100%;
         right: 0; /* Move o menu para a direita */
         padding: 0; /* Remove o espaçamento interno */
-        z-index: 15;
+        z-index: 150;
         top: 45%;
         border-radius: 2vh;
         

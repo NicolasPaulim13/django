@@ -76,11 +76,7 @@
         left: 5%;
     }
 
-    .vantagens img {
-        left: 5%;
-        margin-top: -10%;
-        width: 90%;
-    }
+   
 
     .vantagens h1 {
         width: 90%;
@@ -131,10 +127,8 @@
         left: 10%;
     }
 
-    .vantagens img {
-        width: 90%;
-        left: 5%;
-    }
+    
+    
 
     .vantagens h1 {
         font-size: 150%;
@@ -237,13 +231,7 @@
         left: 5%;
     }
 
-    .vantagens img {
-        
-        width: 95%;
-        left: 2.5%;
-        margin-top: -5%;
-    }
-
+    
     .vantagens h1,
     .vantagens h2 {
         font-size: 120%;
@@ -266,17 +254,7 @@
 }
 
 /* Estilos adicionais para garantir a responsividade */
-.vantagens img {
-    position: relative;
-    left: 15%;
-    top: -10em;
-    margin-top: -18%;
-    border-bottom-left-radius: 4em;
-    border-bottom-right-radius: 4em;
-    border-top-right-radius: 4em;
-    border-top-left-radius: 0.5em;
-    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
-}
+
 
 .vantagens img:hover {
     transform: scale(1.1);
@@ -301,8 +279,20 @@
     left: 40%;
 }
 
-.vantegem1,
+.vantegem1{
+    position: relative;
+    right: 4em;
+    border: 0.1em solid rgba(53, 53, 53, 0.199);
+    border-radius: 1em;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    
+}
 .vantegem3 {
+    position: relative;
+    left: 5em;
     border: 0.1em solid rgba(53, 53, 53, 0.199);
     border-radius: 1em;
     padding-right: 3%;
@@ -341,20 +331,18 @@
     width: 100%;
 }
 
-.vantagens-img img {
-    width: 4%;
-}
+
 
 .equipe-img {
     position: relative;
-    top: -25em;
-    left: 7.5%;
+    top: -36.5em;
+    left: 5.5%;
 }
 
 .tecnologia-img {
     position: relative;
-    top: -24.5em;
-    left: 54%;
+    top: -35em;
+    left: 70%;
 }
 
 section.parte3 p {
@@ -479,3 +467,42 @@ section.planos {
 .beneficios-premium ul li {
     position: relative;
 }
+
+
+
+
+
+/*nova parte da responsividade*/
+
+
+
+.vantagens img {
+    position: relative;
+    left: 15%;
+    top: -10em;
+    margin-top: -18%;
+    border-bottom-left-radius: 4em;
+    border-bottom-right-radius: 4em;
+    border-top-right-radius: 4em;
+    border-top-left-radius: 0.5em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .vantagens img {
+        width: 70%; /* Diminui o tamanho da imagem */
+        left: 15%; /* Ajusta a posição horizontal, se necessário */
+        top: -5em; /* Desce a imagem */
+        margin-top: 0; /* Remove a margem superior negativa */
+    }
+}
+
+@media (max-width: 576px) {
+    .vantagens img {
+        width: 80%; /* Ajusta o tamanho para telas ainda menores */
+        left: 10%; /* Centraliza um pouco mais em telas muito pequenas */
+        top: -3em; /* Desce mais a imagem */
+        margin-top: 0; /* Remove qualquer margem superior negativa */
+    }
+}
+

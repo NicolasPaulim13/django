@@ -10,6 +10,15 @@ Das Graças{% endblock %} {% load static %} {% block content %}
   <a href="{% url 'index' %}">Home</a> / <a href="{% url 'tratamentos' %}">Tratamentos</a>
   </div>
 </div>
+<div class="protese">
+  <img src="{% static 'img/dente6.png' %}" alt="Próteses" />
+  <h3>Próteses</h3>
+  <p>
+    Elaboração de dispositivos protéticos para substituir dentes perdidos com
+    as mais avançadas tecnologias.
+  </p>
+</div>
+
   <div class="clareamento">
     <img src="{% static 'img/dente1.png' %}" alt="Clareamento 100% a laser" />
     <h3>Clareamento 100% a laser</h3>
@@ -47,15 +56,7 @@ Das Graças{% endblock %} {% load static %} {% block content %}
       da mandíbula.
     </p>
   </div>
-  <div class="protese">
-    <img src="{% static 'img/dente6.png' %}" alt="Próteses" />
-    <h3>Próteses</h3>
-    <p>
-      Elaboração de dispositivos protéticos para substituir dentes perdidos com
-      as mais avançadas tecnologias.
-    </p>
-  </div>
+ 
 </section>
-</div>
 
 {% endblock %}

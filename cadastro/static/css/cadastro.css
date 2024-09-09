@@ -192,3 +192,18 @@
     background-color: #b6eff4;
     transform: translateY(2px);
 }
+
+@media (max-width: 768px) {
+    .login-container {
+        position: relative;
+        top: 10em;
+        right: 7em;
+    }
+
+    .paciente, .medico {
+        position: relative;
+        right: -1em;
+      min-width: 20em;
+    }
+}
+

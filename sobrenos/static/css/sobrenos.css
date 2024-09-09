@@ -1,35 +1,26 @@
-/* Breadcrumb */
-.breadcrumb-container {
-    padding: 10px 5%;
-    margin: 0;
-}
-
-.breadcrumb {
-    background-color: transparent;
-    margin-bottom: 0;
-    display: flex;
-    justify-content: center;
+.breadcrumb-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
     position: relative;
-    top: px;
+    top: 20px;
+
 }
 
-.titulosobrenos {
-    text-align: center;
-    margin-top: 20px;
+.breadcrumb-container .breadcrumb {
+    background: none;
+    padding: 0;
     position: relative;
+    top: 0px;
 }
 
-.breadcrumb-item a {
+.breadcrumb-container .breadcrumb-item a {
     color: #000000;
     text-decoration: none;
+    position: relative;
 }
 
-.breadcrumb-item a:hover {
+.breadcrumb-container .breadcrumb-item a:hover {
     text-decoration: underline;
-}
-
-.breadcrumb-item.active {
-    color: #000000;
 }
 
 /* Seção Sobre Nós */
@@ -161,7 +152,10 @@
         margin-bottom: 20px;
     }
 
-    .titulofeedback, .octavofeedback, .mateusfeedback {
+    .titulofeedback{
+        left: 1.7em;
+    }
+     .octavofeedback, .mateusfeedback {
         text-align: center;
         margin: 20px 0;
     }
