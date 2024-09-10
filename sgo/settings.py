@@ -49,8 +49,9 @@ INSTALLED_APPS = [
     'cadastro_chefe',
     'index_medico',
     'index_adm',
-
-
+    'agendamentos',
+    'index_cliente',
+    'cadastro_registro',
 ]
 
 MIDDLEWARE = [

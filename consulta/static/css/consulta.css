@@ -43,6 +43,11 @@
     border-radius: 10px;
 }
 
+.form-control {
+    border-radius: 10px;
+}
+
+
 .btn-custom {
     background-color: #00bcd4;
     color: #ffffff;
