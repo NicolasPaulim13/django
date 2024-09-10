@@ -8,7 +8,7 @@
 <div class="tudis">
     <div class="login-container">
         <!-- Logo da página de login -->
-        <img src="https://via.placeholder.com/100" alt="Logo">
+        <img src=" {% static 'img/qualquerbosta.png' %} " alt="Logo">
         <!-- Título da página -->
         <h2>Login Paciente</h2>
         <!-- Formulário de login -->
@@ -38,7 +38,8 @@
         <!-- Link para registro de novo usuário -->
         <div class="signup-link">
             <p>Não tem uma conta? <a href="#">Registre-se aqui</a></p>
-            <p>Dentista? <a href="#">Acesse o painel exclusivo aqui</a></p>
+            <p>Dentista? <a href="{% url 'cadastro_adm' %}">Acesse o painel exclusivo aqui</a></p>
+            <p>Administrador? <a href="{% url 'cadastro_chefe' %}">Acesse o painel administrativo aqui</a></p>
         </div>
     </div>
 </div>

@@ -253,6 +253,7 @@ nav a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
+    margin-top: 55px;
 }
 
 .questions ul {
@@ -261,24 +262,40 @@ nav a:hover {
     width: 45%;
 }
 
-.questions li {
-    background: url('checkmark.png') no-repeat left center;
-    padding-left: 30px;
-    margin-bottom: 10px;
-    color: #333;
-    font-size: 1.2em;
-    margin-top: 7px;
-}
+
 
 @media (max-width: 768px) {
     .questions {
         flex-direction: column;
         align-items: center;
+        margin-top: -33px;
     }
 
     .questions ul {
         width: 100%;
     }
+}
+
+.midicao img {
+    nav-index: 5;
+    position: relative;
+    height: 70%;
+    width: 90%;
+    border-radius: 5vh;
+  margin-top: 0px;
+}
+
+@media (max-width: 768px) {
+    .midicao img {
+       margin-top: -30px;
+    }
+}
+
+@media (max-width: 768px) {
+      .faq-container h1{
+    position: relative;
+    margin-left: -65px;
+}
 }
 
 .faq-grid-container {

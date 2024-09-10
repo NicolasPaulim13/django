@@ -37,6 +37,9 @@ urlpatterns = [
     path('contatos/', include('contatos.urls')),
     path('consulta/', include('consulta.urls')),
     path('cadastro/', include('cadastro.urls')),
-     path('cadastro_adm/', include('cadastro_adm.urls')),
+    path('cadastro_adm/', include('cadastro_adm.urls')),
+    path('cadastro_chefe/', include('cadastro_chefe.urls')),
     path('sobrenos/', include('sobrenos.urls')),
+    path('index_medico/', include('index_medico.urls')),
+    path('index_adm/', include('index_adm.urls')),
 ]

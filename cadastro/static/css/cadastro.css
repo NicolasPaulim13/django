@@ -50,7 +50,7 @@
 .login-container button {
     width: 100%;
     padding: 15px;
-    background-color: #28a745;
+    background-color: #78ABC3;
     border: none;
     border-radius: 5px;
     color: white;
@@ -61,7 +61,7 @@
 
 /* Efeito de hover no botão de login */
 .login-container button:hover {
-    background-color: #218838;
+    background-color: #78ABC3;
 }
 
 /* Estilo da mensagem de erro */
@@ -130,6 +130,7 @@
     text-decoration: underline;
 }
 
+
 .entrar-button:hover {
     transition: 700ms;
     transform: scale(1.1);
@@ -196,7 +197,7 @@
 @media (max-width: 768px) {
     .login-container {
         position: relative;
-        top: 10em;
+        top: 2em;
         right: 7em;
     }
 

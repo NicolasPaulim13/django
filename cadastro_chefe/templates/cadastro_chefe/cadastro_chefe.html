@@ -1,0 +1,48 @@
+{% extends 'registration/base.html' %}
+
+{% block title %}Tratamentos - Sorriso Das Graças{% endblock %}
+
+{% load static %}
+
+{% block content %}
+<div class="tudis">
+    <div class="login-container">
+        <!-- Logo da página de login -->
+        <img src=" {% static 'img/tudonelas.png' %} " alt="Logo">
+        <!-- Título da página -->
+        <h2>Login Adiministrador</h2>
+        <!-- Formulário de login -->
+        <form method="post">
+            {% csrf_token %}
+            <input type="text" name="username" placeholder="Nome de usuário" required>
+            <input type="password" name="password" placeholder="Senha" required>
+           <button type="submit" class="entrar-button">Entrar</button> 
+        </form>
+
+        <!-- Exibição de erros no formulário -->
+        {% if form.errors %}
+        <div class="error">
+            <p>Usuário ou senha incorretos. Tente novamente.</p>
+        </div>
+        {% endif %}
+
+        <!-- Seção de login por redes sociais -->
+        <div class="social-login">
+            <p>Ou entre com:</pg>
+            <div class="social-buttons">
+                <p><img src="https://img.icons8.com/?size=100&id=17949&format=png&color=000000" alt="">Sign in</p>
+                <p><img src="https://img.icons8.com/?size=100&id=95294&format=png&color=000000" alt="">Sign in</p>
+            </div>
+        </div>
+
+        <!-- Link para registro de novo usuário -->
+        <div class="signup-link">
+            <p>Dentista? <a href="{% url 'cadastro_adm' %}">Acesse o painel exclusivo aqui</a></p>
+            <p>Paciente? <a href="{% url 'cadastro' %}">Acesse seu painel pessoal aqui</a></p>
+    
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

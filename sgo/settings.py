@@ -46,6 +46,10 @@ INSTALLED_APPS = [
     'consulta',
     'cadastro',
     'cadastro_adm',
+    'cadastro_chefe',
+    'index_medico',
+    'index_adm',
+
 
 ]
 
