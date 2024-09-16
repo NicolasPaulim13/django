@@ -8,7 +8,7 @@
 <div class="tudis">
     <div class="login-container">
         <!-- Logo da página de login -->
-        <img src=" {% static 'img/tudonelas.png' %} " alt="Logo">
+        <img src=" {% static 'img/registro-online.png' %} " alt="Logo">
         <!-- Título da página -->
         <h2>Registre-se!</h2>
         <!-- Formulário de login -->
@@ -16,6 +16,10 @@
             {% csrf_token %}
             <input type="text" name="username" placeholder="Nome de usuário" required>
             <input type="password" name="password" placeholder="Senha" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <input type="date"name="data de nacimento" placeholder="nacimento" required>
+            <input type="radio" name="sexo">
+            <label for="">masculino</label>
            <button type="submit" class="entrar-button">Entrar</button> 
         </form>
 
