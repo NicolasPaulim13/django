@@ -34,3 +34,8 @@ def agendamento_delete(request, pk):
         return redirect('agendamento_list')
     return render(request, 'agendamentos/agendamento_confirm_delete.html', {'agendamento': agendamento})
 
+
+from django.shortcuts import render
+
+def consulta_view(request):
+    return render(request, 'agendamentos/agendamento_form.html')

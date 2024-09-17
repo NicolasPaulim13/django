@@ -8,31 +8,66 @@
 <div class="tudis">
     <div class="login-container">
         <!-- Logo da página de login -->
-        <img src=" {% static 'img/registro-online.png' %} " alt="Logo">
+        <img src="{% static 'img/registro-online.png' %}" alt="Logo">
         <!-- Título da página -->
         <h2>Registre-se!</h2>
-        <!-- Formulário de login -->
-        <form method="post">
+        <!-- Formulário de registro -->
+        <form method="POST" action="{% url 'cadastro_create_paciente' %}">
             {% csrf_token %}
-            <input type="text" name="username" placeholder="Nome de usuário" required>
-            <input type="password" name="password" placeholder="Senha" required>
-            <input type="email" name="Email" placeholder="Email" required>
-            <input type="date"name="data de nacimento" placeholder="nacimento" required>
-            <input type="radio" name="sexo">
-            <label for="">masculino</label>
-           <button type="submit" class="entrar-button">Entrar</button> 
+            
+            <div class="nome">
+                <input type="text" name="nome_paciente" placeholder="Nome" required>
+            </div>
+
+            <div class="Email">
+                <input type="email" name="email_paciente" placeholder="Email" required>
+            </div>
+
+            <div class="cpf">
+                <input type="text" name="cpf_paciente" placeholder="CPF" id="cpf" required maxlength="11">
+            </div>
+
+            <div class="nacimento">
+                <input type="date" name="data_nascimento_paciente" placeholder="Data de nascimento" required>
+            </div>
+
+            <div class="escolhadosexo">
+                <select name="sexo_paciente" id="gender" required>
+                    <option value="" disabled selected>Sexo</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                    <option value="O">Outro</option>
+                </select>
+            </div>
+
+            <div class="senha">
+                <input type="password" name="senha_paciente" placeholder="Senha" required>
+            </div>
+
+            <div class="confirma_senha">
+                <input type="password" name="confirma_senha_paciente" placeholder="Confirme sua Senha" required>
+            </div>
+
+            <button type="submit">Cadastrar</button>
         </form>
 
         <!-- Exibição de erros no formulário -->
         {% if form.errors %}
         <div class="error">
-            <p>Usuário ou senha incorretos. Tente novamente.</p>
+            <p>Por favor, corrija os erros abaixo:</p>
+            <ul>
+                {% for field in form %}
+                    {% if field.errors %}
+                        <li>{{ field.label }}: {{ field.errors }}</li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         </div>
         {% endif %}
 
         <!-- Seção de login por redes sociais -->
         <div class="social-login">
-            <p>Ou entre com:</pg>
+            <p>Ou entre com:</p>
             <div class="social-buttons">
                 <p><img src="https://img.icons8.com/?size=100&id=17949&format=png&color=000000" alt="">Sign in</p>
                 <p><img src="https://img.icons8.com/?size=100&id=95294&format=png&color=000000" alt="">Sign in</p>
@@ -43,10 +78,9 @@
         <div class="signup-link">
             <p>Dentista? <a href="{% url 'cadastro_adm' %}">Acesse o painel exclusivo aqui</a></p>
             <p>Paciente? <a href="{% url 'cadastro' %}">Acesse seu painel pessoal aqui</a></p>
-    
         </div>
     </div>
 </div>
 
-
+<script src="{% static 'js/registro.js' %}"></script>
 {% endblock %}

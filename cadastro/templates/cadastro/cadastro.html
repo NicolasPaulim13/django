@@ -5,6 +5,7 @@
 {% load static %}
 
 {% block content %}
+
 <div class="tudis">
     <div class="login-container">
         <!-- Logo da página de login -->
@@ -40,6 +41,7 @@
             <p>Não tem uma conta? <a href="{% url 'cadastro_registro' %}">Registre-se aqui</a></p>
             <p>Dentista? <a href="{% url 'cadastro_adm' %}">Acesse o painel exclusivo aqui</a></p>
             <p>Administrador? <a href="{% url 'cadastro_chefe' %}">Acesse o painel administrativo aqui</a></p>
+            <p>Esqueci a senha <a href="{% url 'esqueceu_senha' %}">Acesse o painel administrativo aqui</a></p>
         </div>
     </div>
 </div>

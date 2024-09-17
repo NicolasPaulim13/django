@@ -45,4 +45,5 @@ urlpatterns = [
     path('index_adm/', include('index_adm.urls')),
     path('index_cliente/', include('index_cliente.urls')),
     path('agendamentos/', include('agendamentos.urls')),
+    path('esqueceu_senha/', include('esqueceu_senha.urls')),
 ]

@@ -52,9 +52,11 @@ INSTALLED_APPS = [
     'agendamentos',
     'index_cliente',
     'cadastro_registro',
+    'esqueceu_senha',
 ]
 
 MIDDLEWARE = [
+    
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -137,7 +139,13 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'  # Diretório para coletar os arquivos es
 
 # Configurações de autenticação e redirecionamento.
 
-LOGIN_URL = '/index'  # URL para página de login.
+# Configurações de autenticação e redirecionamento.
+
+
+# settings.py
+
+LOGIN_REDIRECT_URL = 'index_cliente'  # Redireciona para a URL após login bem-sucedido
+LOGOUT_REDIRECT_URL = 'index'  # Redireciona para a URL após logout
 
 
 
@@ -146,3 +154,5 @@ LOGIN_URL = '/index'  # URL para página de login.
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+

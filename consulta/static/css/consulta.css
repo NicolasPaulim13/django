@@ -266,3 +266,20 @@ button {
         border-bottom: 1px solid #e0e0e0;
     }   
 }
+
+
+button[type="submit"] {
+    background-color: #78ABC3;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10vh;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-family: "Roboto Flex";
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button[type="submit"]:hover {
+    background-color: #69C4D3;
+}

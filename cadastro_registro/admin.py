@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import CadastroRegistro
 
-# Register your models here.
+@admin.register(CadastroRegistro)
+class CadastroRegistroAdmin(admin.ModelAdmin):
+    list_display = ('nome_paciente', 'email_paciente', 'cpf_paciente', 'data_nascimento_paciente', 'sexo_paciente')
+    search_fields = ('nome_paciente', 'email_paciente', 'cpf_paciente')

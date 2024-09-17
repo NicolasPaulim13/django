@@ -19,22 +19,22 @@
     </nav>
   </div>
   <button type="submit" class="btn btn-primary btn-compromisso">
-    Enviar Minha Consulta
+    Marcar Consulta
   </button>
 
   <div class="card p-4 shadow-lg form-container">
     <form id="contactForm" class="row g-3">
       <div class="col-12">
         <label for="name" class="form-label">Nome:</label>
-        <input type="text" class="form-control" id="name" placeholder="por exemplo James Brown" required />
+        <input type="text" class="form-control" id="name" placeholder="Name" required />
       </div>
       <div class="col-12">
         <label for="email" class="form-label">E-mail:</label>
-        <input type="email" class="form-control" id="email" placeholder="por exemplo, usuário@email.com" required />
+        <input type="email" class="form-control" id="email" placeholder="usuário@email.com" required />
       </div>
       <div class="col-12">
         <label for="phone" class="form-label">Número de telefone:</label>
-        <input type="tel" class="form-control" id="phone" placeholder="por exemplo 082998029XXX" required />
+        <input type="tel" class="form-control" id="phone" placeholder="(XX)XXXXX-XXXX" required />
       </div>
       <div class="col-12">
         <label for="subject" class="form-label">Assunto:</label>
@@ -56,19 +56,21 @@
 
       <div class="col-12">
         <label for="message" class="form-label">Data/Hora da Consulta:</label>
-        <input class="form-control" type="date">
-        <input class="form-control" type="time">
+        <input class="form-control" type="date" id="data" required>
+        <select id="time-selector" class="form-control"></select>
       </div>
 
       <div class="col-12">
-        <label for="message" class="form-label">Mensagem</label>
-        <textarea class="form-control" id="message" rows="4" placeholder="" required></textarea>
+        <label for="message" class="form-label">Observações:</label>
+        <textarea class="form-control" id="message" rows="1" placeholder="" required></textarea>
       </div>
+
       <div class="col-12 d-grid"></div>
     </form>
   </div>
 </div>
 
-<script src="sorriso.js"></script>
+<script src="{% static 'js/Consulta.js' %}"></script>
+
 
 {% endblock %}
