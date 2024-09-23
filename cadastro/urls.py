@@ -1,9 +1,6 @@
-# Importações necessárias para definir as rotas de URLs
-from django.urls import path  # Importa a função path para definir as rotas de URL
-from .views import cadastro  # Importa a função de view 'home' do módulo 'views' local
+from django.urls import path
+from .views import cadastro
 
-# Lista de padrões de URL para a aplicação 'core'
 urlpatterns = [
-
-    path('cadastro/', cadastro, name='cadastro'),
+    path('cadastro/', cadastro, name='cadastro'),  # Rota para a página de login
 ]

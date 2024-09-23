@@ -1,35 +1,43 @@
 {% extends 'registration/base.html' %}
 
-{% block title %}Tratamentos - Sorriso Das Graças{% endblock %}
+{% block title %}Login Paciente - Sorriso Das Graças{% endblock %}
 
 {% load static %}
 
 {% block content %}
-
 <div class="tudis">
     <div class="login-container">
-        <!-- Logo da página de login -->
-        <img src=" {% static 'img/qualquerbosta.png' %} " alt="Logo">
-        <!-- Título da página -->
+        <img src="{% static 'img/qualquerbosta.png' %}" alt="Logo">
         <h2>Login Paciente</h2>
-        <!-- Formulário de login -->
         <form method="post">
             {% csrf_token %}
-            <input type="text" name="username" placeholder="Nome de usuário" required>
-            <input type="password" name="password" placeholder="Senha" required>
-           <button type="submit" class="entrar-button">Entrar</button> 
+            {{ form.non_field_errors }}
+            <div>
+                {{ form.username.errors }}
+                <input type="text" name="username" placeholder="Nome de usuário" required value="{{ form.username.value }}">
+            </div>
+            <div>
+                {{ form.password.errors }}
+                <input type="password" name="password" placeholder="Senha" required>
+            </div>
+            <div>
+                <input type="password" name="confirma_password" placeholder="Confirme sua senha" required>  <!-- Adicionado campo de confirmação -->
+            </div>
+            <button type="submit" class="entrar-button">Entrar</button>
         </form>
 
         <!-- Exibição de erros no formulário -->
-        {% if form.errors %}
+        {% if messages %}
         <div class="error">
-            <p>Usuário ou senha incorretos. Tente novamente.</p>
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
         </div>
         {% endif %}
 
         <!-- Seção de login por redes sociais -->
         <div class="social-login">
-            <p>Ou entre com:</pg>
+            <p>Ou entre com:</p>
             <div class="social-buttons">
                 <p><img src="https://img.icons8.com/?size=100&id=17949&format=png&color=000000" alt="">Sign in</p>
                 <p><img src="https://img.icons8.com/?size=100&id=95294&format=png&color=000000" alt="">Sign in</p>
@@ -45,6 +53,4 @@
         </div>
     </div>
 </div>
-
-
 {% endblock %}
