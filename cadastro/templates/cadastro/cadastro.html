@@ -14,7 +14,7 @@
             {{ form.non_field_errors }}
             <div>
                 {{ form.username.errors }}
-                <input type="text" name="username" placeholder="Nome de usuário" required value="{{ form.username.value }}">
+                <input type="text" name="username" placeholder="Nome de usuário" required value="{{ form.username.value|default_if_none:'' }}">
             </div>
             <div>
                 {{ form.password.errors }}
