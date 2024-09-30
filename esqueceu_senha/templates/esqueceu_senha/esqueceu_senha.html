@@ -8,7 +8,7 @@
 <div class="tudis">
     <div class="login-container">
         <!-- Logo da página de login -->
-        <img src="{% static 'img/registro-online.png' %}" alt="Logo">
+        <img src="{% static 'img/esqueceu-a-senha.png' %}" alt="Logo">
         <!-- Título da página -->
         <h2>Esqueci a senha</h2>
         <!-- Formulário de registro -->
@@ -41,6 +41,7 @@
         <div class="signup-link">
             <p>Dentista? <a href="{% url 'cadastro_adm' %}">Acesse o painel exclusivo aqui</a></p>
             <p>Paciente? <a href="{% url 'cadastro' %}">Acesse seu painel pessoal aqui</a></p>
+            <p>Administrador? <a href="{% url 'cadastro_chefe' %}">Acesse seu painel pessoal aqui</a></p>
         </div>
     </div>
 </div>
