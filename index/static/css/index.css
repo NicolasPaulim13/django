@@ -1,182 +1,508 @@
-{% extends 'registration/base.html' %}
-{% load static %}
+/* Estilos Globais */
+.parte1 {
+    position: relative;
+}
 
-{% block content %}
-<head>
+.img-principal {
+    width: 100%;
+    object-fit: cover;
+    height: 40%;
+    border-bottom-left-radius: 10vh;
+    border-bottom-right-radius: 10vh;
+}
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Faça o Login</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Login:</label>
-                                <input type="text" class="form-control" id="recipient-name">
-                            </div>
-                            <label for="password-input">Senha:</label>
-                            <div class="password-container">
-                                <input type="password" class="form-control" id="password-input">
-                            </div>
+/* Estilos para telas grandes */
+.conteudo-home h1 {
+    font-family: "PlayfairDisplay";
+    font-size: 375%;
+    width: 30%;
+    position: relative;
+    top: -95vh;
+    left: 5%;
+    color: rgb(255, 255, 255);
+}
 
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#" class="button-cadastre">Cadastre-se</a>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary" id="liveToastBtn">Login</button>
-                        <div class="toast-container position-fixed bottom-0 end-0 p-3">
-                            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                                <div class="toast-header">
-                                    <strong class="me-auto">Sorriso das Graças</strong>
-                                    <small>Agora Mesmo</small>
-                                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                                </div>
-                                <div class="toast-body">
-                                    Login feito com Sucesso
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <script>
-                    // Obtém o botão e o toast
-                    var toastTrigger = document.getElementById('liveToastBtn');
-                    var toastLiveExample = document.getElementById('liveToast');
-                    
-                    // Verifica se o botão existe na página
-                    if (toastTrigger) {
-                        toastTrigger.addEventListener('click', function () {
-                            var toast = new bootstrap.Toast(toastLiveExample);
-                            toast.show();
-                        });
-                    }
-                    </script>
-                    
-                </div>
-            </div>
-        </div>
-    </header>
-    <section class="parte1">
-        <div class="conteudo-home">
-            <img class="img-principal" src="{% static  'img/home-principal.jpg' %}" alt="">
-            <h1 class="titulo-home">Odontologia Sorriso das Graças</h1>
-            <h2>Cuidando do Seu Sorriso com Dedicação e Excelência. Nossa equipe de profissionais qualificados
-                oferece
-                tratamentos de alta qualidade para garantir sua saúde bucal e um sorriso radiante.</h2>
-            <button type="button" class="btn btn-outline-primary">Saiba Mais</button>
-        </div>
-    </section>
-    <section class="parte2">
-        <div class="vantagens">
-            <img src="{% static '/img/crianca.jpg' %}" alt="">
-            <h1>Por que você deve escolher nosso serviço odontológico?</h1>
-            <h2>Descubra por que nosso serviço odontológico se destaca dos demais. Da nossa equipe experiente ao nosso
-                equipamento de última geração, oferecemos atendimento excepcional para todas as suas necessidades
-                odontológicas.</h2>
-        </div>
-        <div class="counteiner-vantagens">
-            <div class="vantegem1">
-                <h1> Equipe Especializada e Qualificada</h1>
-                <br>
-                <h2>Nossa equipe é formada por profissionais super experientes que entendem tudo sobre o que fazem. Eles
-                    estão sempre aprendendo coisas novas para te oferecer o melhor atendimento.</h2>
+.conteudo-home h2 {
+    font-family: "Inter Light";
+    font-size: 1.8rem;
+    font-weight: 100;
+    opacity: 80%;
+    position: relative;
+    top: -120vh;
+    left: 40%;
+    width: 40%;
+    height: 1%;
+    color: rgb(255, 255, 255);
+}
 
-            </div>
-            <div class="vantegem3">
+.conteudo-home button {
+    border-radius: 50vh;
+    width: 20%;
+    position: relative;
+    left: 4.5%;
+    top: -120vh;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-color: transparent;
+    font-weight: 600;
+}
 
-                <h1>Tecnologia de Ponta e Moderna</h1>
-                <br>
-                <h2>Com a nossa tecnologia de ponta, seus problemas são resolvidos mais rápido e com mais precisão.
-                    Nossa
-                    infraestrutura moderna garante um atendimento mais eficiente e confortável para você.</h2>
+.conteudo-home button:hover {
+    background-color: #313131;
+    color: white;
+    border-color: transparent;
+    transition: 1000ms;
+}
 
-            </div>
-        </div>
-        <div class="vantagens-img">
-            <img class="tecnologia-img" src="{% static 'img/tecnologia.png' %}" alt="">
-            <img class="equipe-img" src="{% static 'img/equipe.png' %}" alt="">
-        </div>
+/* Estilos para telas médias */
+@media (max-width: 1024px) {
+    .conteudo-home h1 {
+        font-size: 300%;
+        width: 40%;
+        top: -70vh;
+        left: 5%;
+    }
 
-    </section>
-    <section class="planos">
-        <div class="titulo">
-            <h1><u>Planos</u></h1>
-        </div>
-        <div class="container-planos">
-            <div class="individual">
-                <div class="texto-individual">
-                    <p>Plano</p>
-                    <h1>Individual</h1>
-                </div>
-                <div class="precos-indv">
-                    <p class="moeda-indv"></p>
-                    <h1>39</h1>
-                    <h2 class="centavos-indv">,99/Mês</h2>
-                    <p class="mensalidade-indv"></p>
-                    <div class="beneficios-indv">
-                        <ul>
-                            <li>Exames orais;</li>
-                            <li>Limpeza e polimento;</li>
-                            <li>Procedimentos restauradores.</li>
-                        </ul>
-                    </div>
-                    <br>
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-primary" type="button">Contrate Já</button>
-                    </div>
-                </div>
+    .conteudo-home h2 {
+        font-size: 1.5rem;
+        top: -85vh;
+        left: 10%;
+        width: 80%;
+    }
 
-            </div>
-            <div class="familia">
-                <div class="texto-familia">
-                    <p>Plano</p>
-                    <h1>Família</h1>
-                </div>
-                <div class="precos-fam">
-                    <p class="moeda-fam"></p>
-                    <h1>249</h1>
-                    <h2 class="centavos-fam">,99/Mês</h2>
-                    <p class="mensalidade-fam"></p>
-                    <div class="beneficios-fam">
-                        <ul>
-                            <li>Coroas e Pontes;</li>
-                            <li>Terapia de canal radicular;</li>
-                            <li>Procedimentos restauradores.</li>
-                        </ul>
-                    </div>
-                    <br>
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-primary" type="button">Contrate Já</button>
-                    </div>
-                </div>
-            </div>
-            <div class="premium">
-                <div class="texto-premium">
-                    <p>Plano</p>
-                    <h1>Premium</h1>
-                </div>
-                <div class="precos-premium">
-                    <p class="moeda-premium"></p>
-                    <h1>99</h1>
-                    <h2 class="centavos-premium">,99/Mês</h2>
-                    <p class="mensalidade-premium"></p>
-                    <div class="beneficios-premium">
-                        <ul>
-                            <li> Implantes Dentários;</li>
-                            <li>Odontologia Estética;</li>
-                            <li>Procedimentos ortodônticos.</li>
-                        </ul>
-                    </div>
-                    <br>
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-primary" type="button">Contrate Já</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    {% endblock %}
+    .conteudo-home button {
+        width: 30%;
+        top: -85vh;
+        left: 5%;
+    }
+
+   
+
+    .vantagens h1 {
+        width: 90%;
+        top: -8em;
+        left: 5%;
+        text-align: center;
+    }
+
+    .vantagens h2 {
+        width: 90%;
+        top: -9em;
+        left: 5%;
+        text-align: center;
+    }
+
+    .counteiner-vantagens {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+        top: -5em;
+    }
+
+    .container-planos {
+        flex-direction: column;
+        margin: 2%;
+    }
+}
+
+/* Estilos para telas pequenas */
+@media (max-width: 768px) {
+    .conteudo-home h1 {
+        font-size: 250%;
+        width: 80%;
+        top: -60vh;
+        left: 10%;
+    }
+
+    .conteudo-home h2 {
+        font-size: 1.4rem;
+        top: -70vh;
+        width: 80%;
+        left: 10%;
+    }
+
+    .conteudo-home button {
+        width: 60%;
+        top: -70vh;
+        left: 10%;
+    }
+
+    
+    
+
+    .vantagens h1 {
+        font-size: 150%;
+        top: -6em;
+        left: 5%;
+        text-align: center;
+    }
+
+    .vantagens h2 {
+        font-size: 1.1rem;
+        top: -7em;
+        left: 5%;
+        text-align: center;
+    }
+
+    .counteiner-vantagens {
+        flex-direction: column;
+        padding-left: 2%;
+        padding-right: 2%;
+        top: -5em;
+    }
+
+    .container-planos {
+        flex-direction: column;
+        margin: 1%;
+    }
+
+    .texto-individual,
+    .texto-familia,
+    .texto-premium {
+        padding: 0.5em;
+    }
+
+    .precos-indv,
+    .precos-fam,
+    .precos-premium {
+        padding-bottom: 0.5em;
+    }
+}
+.precos-indv h1{
+    position: relative;
+    top: 10px;
+    right: 25px;
+}
+.precos-indv h2{
+    position: relative;
+    top: -30px;
+    left: 38px;
+}
+
+.precos-indv p{
+    position: relative;
+    top: 27px;
+    left: 100px;
+}
+
+.precos-fam h1{
+    position: relative;
+    right:25px;
+    top: -5px;
+}
+.centavos-fam {
+    position: relative;
+    left: 50px;
+    
+}
+
+.precos-premium h1{
+    position: relative;
+    right: 20px;
+    top: -10px;
+}
+
+.centavos-premium{
+    position: relative;
+    left: 38px;
+    
+}
+
+
+/* Estilos para telas muito pequenas */
+@media (max-width: 576px) {
+    .conteudo-home h1 {
+        font-size: 200%;
+        width: 100%;
+        top: -40vh;
+        left: 5%;
+    }
+
+    .conteudo-home h2 {
+        font-size: 1.2rem;
+        top: -40vh;
+        width: 90%;
+        left: 5%;
+    }
+
+    .conteudo-home button {
+        width: 80%;
+        top: -40vh;
+        left: 5%;
+    }
+
+    
+    .vantagens h1,
+    .vantagens h2 {
+        font-size: 120%;
+        top: -4em;
+        left: 2.5%;
+        text-align: center;
+    }
+
+    .counteiner-vantagens {
+        flex-direction: column;
+        padding-left: 2%;
+        padding-right: 2%;
+        top: -3em;
+    }
+
+    .container-planos {
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+/* Estilos adicionais para garantir a responsividade */
+
+
+.vantagens img:hover {
+    transform: scale(1.1);
+    transition: 800ms;
+}
+
+.vantagens h1 {
+    font-family: "PlayfairDisplay";
+    width: 50%;
+    position: relative;
+    top: -14em;
+    left: 45%;
+}
+
+.vantagens h2 {
+    font-family: "Inter Light";
+    font-weight: 100;
+    opacity: 80%;
+    width: 50%;
+    position: relative;
+    top: -15em;
+    left: 40%;
+}
+
+.vantegem1{
+    position: relative;
+    right: 4em;
+    border: 0.1em solid rgba(53, 53, 53, 0.199);
+    border-radius: 1em;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    
+}
+.vantegem3 {
+    position: relative;
+    left: 5em;
+    border: 0.1em solid rgba(53, 53, 53, 0.199);
+    border-radius: 1em;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+.vantegem1:hover,
+.vantegem3:hover {
+    transform: scale(1.1);
+    transition: 800ms;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+}
+
+.counteiner-vantagens {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: stretch;
+    position: relative;
+    top: -9em;
+}
+
+.counteiner-vantagens h1 {
+    font-family: "Poppins Regular";
+    font-weight: 600;
+    font-size: 125%;
+    color: rgb(120, 170, 195);
+}
+
+.counteiner-vantagens h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 130%;
+    width: 100%;
+}
+
+
+
+.equipe-img {
+    position: relative;
+    top: -36.5em;
+    left: 5.5%;
+}
+
+.tecnologia-img {
+    position: relative;
+    top: -35em;
+    left: 70%;
+}
+
+section.parte3 p {
+    font-family: "PlayfairDisplay";
+    font-size: 175%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-planos {
+    display: flex;
+    justify-content: space-between;
+    margin: 7%;
+}
+
+.texto-individual,
+.texto-familia,
+.texto-premium p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.texto h1 {
+    font-family: "Inter Regular";
+}
+
+.texto-individual,
+.texto-familia,
+.texto-premium {
+    align-items: center;
+    color: white;
+    background-color: black;
+    padding-left: 4em;
+    padding-right: 4rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-top-left-radius: 1.3em;
+    border-top-right-radius: 1.3em;
+}
+
+section.planos {
+    position: relative;
+    top: -5em;
+}
+
+.titulo h1 {
+    font-family: "PlayfairDisplay";
+}
+
+.individual,
+.premium {
+    position: relative;
+    top: 3em;
+}
+
+.premium:hover,
+.familia:hover,
+.individual:hover {
+    transform: scale(1.1);
+    transition: 800ms;
+}
+
+.precos-indv,
+.precos-fam,
+.precos-premium {
+    text-align: center;
+    border: 0.1em solid rgba(53, 53, 53, 0.199);
+    padding-bottom: 2em;
+    border-bottom-left-radius: 1.3em;
+    border-bottom-right-radius: 1.3em;
+}
+
+.precos-indv button,
+.precos-fam button,
+.precos-premium button {
+    background-color: #78aac3;
+    border-color: #78aac3;
+}
+
+.precos-indv button:hover,
+.precos-fam button:hover,
+.precos-premium button:hover {
+    background-color: #4852c2;
+    border-color: #4852c2;
+    transition: 700ms;
+}
+
+.moeda-indv,
+.moeda-fam,
+.moeda-premium {
+    position: relative;
+    top: 2.87em;
+    font-weight: 500;
+}
+
+.centavos-indv,
+.centavos-fam,
+.centavos-premium {
+    position: relative;
+    top: -2.38em;
+    font-size: 1.3em;
+}
+
+.mensalidade-indv,
+.mensalidade-fam,
+.mensalidade-premium {
+    font-weight: 400;
+    position: relative;
+    top: 10em;
+}
+
+.beneficios-indv ul li,
+.beneficios-fam ul li,
+.beneficios-premium ul li {
+    position: relative;
+}
+
+
+
+
+
+/*nova parte da responsividade*/
+
+
+
+.vantagens img {
+    position: relative;
+    left: 15%;
+    top: -10em;
+    margin-top: -18%;
+    border-bottom-left-radius: 4em;
+    border-bottom-right-radius: 4em;
+    border-top-right-radius: 4em;
+    border-top-left-radius: 0.5em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .vantagens img {
+        width: 70%; /* Diminui o tamanho da imagem */
+        left: 15%; /* Ajusta a posição horizontal, se necessário */
+        top: -5em; /* Desce a imagem */
+        margin-top: 0; /* Remove a margem superior negativa */
+    }
+}
+
+@media (max-width: 576px) {
+    .vantagens img {
+        width: 80%; /* Ajusta o tamanho para telas ainda menores */
+        left: 10%; /* Centraliza um pouco mais em telas muito pequenas */
+        top: -3em; /* Desce mais a imagem */
+        margin-top: 0; /* Remove qualquer margem superior negativa */
+    }
+}
+
