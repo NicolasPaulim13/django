@@ -70,113 +70,69 @@
             <button type="button" class="btn btn-outline-primary">Saiba Mais</button>
         </div>
     </section>
+    
+
     <section class="parte2">
-        <div class="vantagens">
-            <img src="{% static '/img/crianca.jpg' %}" alt="">
-            <h1>Por que você deve escolher nosso serviço odontológico?</h1>
-            <h2>Descubra por que nosso serviço odontológico se destaca dos demais. Da nossa equipe experiente ao nosso
-                equipamento de última geração, oferecemos atendimento excepcional para todas as suas necessidades
-                odontológicas.</h2>
+        <div class="imagekid">
+          <img src="{% static  'img/crianca.jpg' %}" alt="">
         </div>
-        <div class="counteiner-vantagens">
-            <div class="vantegem1">
-                <h1> Equipe Especializada e Qualificada</h1>
-                <br>
-                <h2>Nossa equipe é formada por profissionais super experientes que entendem tudo sobre o que fazem. Eles
-                    estão sempre aprendendo coisas novas para te oferecer o melhor atendimento.</h2>
+        <div class="textkid">
+          <h2>Por que você deve escolher nosso serviço odontológico?</h2>
+          <p>Descubra por que nosso serviço odontológico se destaca dos demais. Da nossa equipe experiente ao nosso equipamento de última geração, oferecemos atendimento excepcional para todas as suas necessidades odontológicas.</p>
+        </div>
+      </section>
 
+      <section class="parte3">
+
+        <div class="card_vantagens">
+            <div class="card">
+                <h3>Equipe Especializada e Qualificada</h3>
+                <p>Nossa equipe é formada por profissionais super experientes que entendem tudo sobre o que fazem. Eles estão sempre aprendendo coisas novas para te oferecer o melhor atendimento.</p>
             </div>
-            <div class="vantegem3">
-
-                <h1>Tecnologia de Ponta e Moderna</h1>
-                <br>
-                <h2>Com a nossa tecnologia de ponta, seus problemas são resolvidos mais rápido e com mais precisão.
-                    Nossa
-                    infraestrutura moderna garante um atendimento mais eficiente e confortável para você.</h2>
-
+            <div class="card">
+                <h3>Equipe Especializada e Qualificada</h3>
+                <p>Com a nossa tecnologia de ponta, seus problemas são resolvidos mais rápido e com mais precisão. Nossa infraestrutura moderna garante um atendimento mais eficiente e confortável para você.</p>
             </div>
         </div>
-        <div class="vantagens-img">
-            <img class="tecnologia-img" src="{% static 'img/tecnologia.png' %}" alt="">
-            <img class="equipe-img" src="{% static 'img/equipe.png' %}" alt="">
-        </div>
 
-    </section>
-    <section class="planos">
+
+      </section>
+
+      <section class="parte4"> 
         <div class="titulo">
-            <h1><u>Planos</u></h1>
+            <h2>Planos</h2>
         </div>
-        <div class="container-planos">
-            <div class="individual">
-                <div class="texto-individual">
-                    <p>Plano</p>
-                    <h1>Individual</h1>
+    
+        
+            <article class="plano">
+                <div class="plano-header">Plano Individual</div>
+                <div class="plano-body">
+                    <p class="preco">$ 39,99</p>
+                    <p>/mês</p>
+                    <button>Saiba mais</button>
                 </div>
-                <div class="precos-indv">
-                    <p class="moeda-indv"></p>
-                    <h1>39</h1>
-                    <h2 class="centavos-indv">,99/Mês</h2>
-                    <p class="mensalidade-indv"></p>
-                    <div class="beneficios-indv">
-                        <ul>
-                            <li>Exames orais;</li>
-                            <li>Limpeza e polimento;</li>
-                            <li>Procedimentos restauradores.</li>
-                        </ul>
-                    </div>
-                    <br>
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-primary" type="button">Contrate Já</button>
-                    </div>
+            </article>
+    
+            <article class="plano">
+                <div class="plano-header">Plano Família</div>
+                <div class="plano-body">
+                    <p class="preco">$ 249,99</p>
+                    <p>/mês</p>
+                    <button>Saiba mais</button>
                 </div>
+            </article>
+    
+            <article class="plano">
+                <div class="plano-header">Plano Premium</div>
+                <div class="plano-body">
+                    <p class="preco">$ 99,99</p>
+                    <p>/mês</p>
+                    <button>Saiba mais</button>
+                </div>
+            </article>
+       
 
-            </div>
-            <div class="familia">
-                <div class="texto-familia">
-                    <p>Plano</p>
-                    <h1>Família</h1>
-                </div>
-                <div class="precos-fam">
-                    <p class="moeda-fam"></p>
-                    <h1>249</h1>
-                    <h2 class="centavos-fam">,99/Mês</h2>
-                    <p class="mensalidade-fam"></p>
-                    <div class="beneficios-fam">
-                        <ul>
-                            <li>Coroas e Pontes;</li>
-                            <li>Terapia de canal radicular;</li>
-                            <li>Procedimentos restauradores.</li>
-                        </ul>
-                    </div>
-                    <br>
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-primary" type="button">Contrate Já</button>
-                    </div>
-                </div>
-            </div>
-            <div class="premium">
-                <div class="texto-premium">
-                    <p>Plano</p>
-                    <h1>Premium</h1>
-                </div>
-                <div class="precos-premium">
-                    <p class="moeda-premium"></p>
-                    <h1>99</h1>
-                    <h2 class="centavos-premium">,99/Mês</h2>
-                    <p class="mensalidade-premium"></p>
-                    <div class="beneficios-premium">
-                        <ul>
-                            <li> Implantes Dentários;</li>
-                            <li>Odontologia Estética;</li>
-                            <li>Procedimentos ortodônticos.</li>
-                        </ul>
-                    </div>
-                    <br>
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-primary" type="button">Contrate Já</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+      </section>
+    
     {% endblock %}

@@ -17,9 +17,10 @@
     font-size: 375%;
     width: 30%;
     position: relative;
-    top: -95vh;
+    top: -90vh;
     left: 5%;
     color: rgb(255, 255, 255);
+    
 }
 
 .conteudo-home h2 {
@@ -28,8 +29,8 @@
     font-weight: 100;
     opacity: 80%;
     position: relative;
-    top: -120vh;
-    left: 40%;
+    top: -125vh;
+    left: 50%;
     width: 40%;
     height: 1%;
     color: rgb(255, 255, 255);
@@ -40,7 +41,7 @@
     width: 20%;
     position: relative;
     left: 4.5%;
-    top: -120vh;
+    top: -110vh;
     color: rgb(0, 0, 0);
     background-color: #ffffff;
     border-color: transparent;
@@ -55,11 +56,11 @@
 }
 
 /* Estilos para telas médias */
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
     .conteudo-home h1 {
         font-size: 300%;
         width: 40%;
-        top: -70vh;
+        top: -30vh;
         left: 5%;
     }
 
@@ -78,431 +79,241 @@
 
    
 
-    .vantagens h1 {
-        width: 90%;
-        top: -8em;
-        left: 5%;
-        text-align: center;
-    }
-
-    .vantagens h2 {
-        width: 90%;
-        top: -9em;
-        left: 5%;
-        text-align: center;
-    }
-
-    .counteiner-vantagens {
-        flex-direction: column;
-        padding-left: 5%;
-        padding-right: 5%;
-        top: -5em;
-    }
-
-    .container-planos {
-        flex-direction: column;
-        margin: 2%;
-    }
+    
 }
 
 /* Estilos para telas pequenas */
 @media (max-width: 768px) {
     .conteudo-home h1 {
-        font-size: 250%;
-        width: 80%;
-        top: -60vh;
-        left: 10%;
+        font-size: 200%;
+        width: 200%;
+        top: -40vh;
+        right: 10%;
     }
 
     .conteudo-home h2 {
-        font-size: 1.4rem;
-        top: -70vh;
+        font-size: 1.2rem;
+        top: -40vh;
         width: 80%;
         left: 10%;
     }
 
     .conteudo-home button {
         width: 60%;
-        top: -70vh;
-        left: 10%;
-    }
-
-    
-    
-
-    .vantagens h1 {
-        font-size: 150%;
-        top: -6em;
-        left: 5%;
-        text-align: center;
-    }
-
-    .vantagens h2 {
-        font-size: 1.1rem;
-        top: -7em;
-        left: 5%;
-        text-align: center;
-    }
-
-    .counteiner-vantagens {
-        flex-direction: column;
-        padding-left: 2%;
-        padding-right: 2%;
-        top: -5em;
-    }
-
-    .container-planos {
-        flex-direction: column;
-        margin: 1%;
-    }
-
-    .texto-individual,
-    .texto-familia,
-    .texto-premium {
-        padding: 0.5em;
-    }
-
-    .precos-indv,
-    .precos-fam,
-    .precos-premium {
-        padding-bottom: 0.5em;
-    }
-}
-.precos-indv h1{
-    position: relative;
-    top: 10px;
-    right: 25px;
-}
-.precos-indv h2{
-    position: relative;
-    top: -30px;
-    left: 38px;
-}
-
-.precos-indv p{
-    position: relative;
-    top: 27px;
-    left: 100px;
-}
-
-.precos-fam h1{
-    position: relative;
-    right:25px;
-    top: -5px;
-}
-.centavos-fam {
-    position: relative;
-    left: 50px;
-    
-}
-
-.precos-premium h1{
-    position: relative;
-    right: 20px;
-    top: -10px;
-}
-
-.centavos-premium{
-    position: relative;
-    left: 38px;
-    
-}
-
-
-/* Estilos para telas muito pequenas */
-@media (max-width: 576px) {
-    .conteudo-home h1 {
-        font-size: 200%;
-        width: 100%;
         top: -40vh;
-        left: 5%;
-    }
-
-    .conteudo-home h2 {
-        font-size: 1.2rem;
-        top: -40vh;
-        width: 90%;
-        left: 5%;
-    }
-
-    .conteudo-home button {
-        width: 80%;
-        top: -40vh;
-        left: 5%;
+        left: 19%;
     }
 
     
-    .vantagens h1,
-    .vantagens h2 {
-        font-size: 120%;
-        top: -4em;
-        left: 2.5%;
-        text-align: center;
-    }
-
-    .counteiner-vantagens {
-        flex-direction: column;
-        padding-left: 2%;
-        padding-right: 2%;
-        top: -3em;
-    }
-
-    .container-planos {
-        flex-direction: column;
-        margin: 0;
-    }
 }
 
-/* Estilos adicionais para garantir a responsividade */
+/* parte2 */
 
-
-.vantagens img:hover {
-    transform: scale(1.1);
-    transition: 800ms;
-}
-
-.vantagens h1 {
-    font-family: "PlayfairDisplay";
-    width: 50%;
+.parte2 {
     position: relative;
-    top: -14em;
-    left: 45%;
-}
-
-.vantagens h2 {
-    font-family: "Inter Light";
-    font-weight: 100;
-    opacity: 80%;
-    width: 50%;
+    top:-80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .imagekid {
     position: relative;
-    top: -15em;
-    left: 40%;
-}
-
-.vantegem1{
-    position: relative;
-    right: 4em;
-    border: 0.1em solid rgba(53, 53, 53, 0.199);
-    border-radius: 1em;
-    padding-right: 3%;
-    padding-left: 3%;
-    padding-top: 5%;
-    padding-bottom: 1%;
+    right: 2vh;
+    flex: 1;
+    max-width: 300px;
+    margin-right: 20px;
     
-}
-.vantegem3 {
+  }
+  
+  .imagekid img {
+    width: 80%;
+    border-radius: 15px;
+  }
+  
+  .textkid {
+    flex: 2;
+    max-width: 600px;
+  }
+  
+  .textkid h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .textkid p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .parte2 {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .imagekid {
+      margin-right: 0;
+      margin-bottom: 20px;
+      top: 100vh;
+    }
+  
+    .textkid h2 {
+      font-size: 22px;
+    }
+  
+    .textkid p {
+      font-size: 14px;
+    }
+  }
+    
+  /* parte3 */
+  .card_vantagens {
     position: relative;
-    left: 5em;
-    border: 0.1em solid rgba(53, 53, 53, 0.199);
-    border-radius: 1em;
-    padding-right: 3%;
-    padding-left: 3%;
-    padding-top: 5%;
-    padding-bottom: 1%;
-}
-
-.vantegem1:hover,
-.vantegem3:hover {
-    transform: scale(1.1);
-    transition: 800ms;
-    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
-}
-
-.counteiner-vantagens {
+    top: -70vh;
+    left: 12%;
     display: flex;
     justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 10%;
-    align-items: stretch;
-    position: relative;
-    top: -9em;
-}
-
-.counteiner-vantagens h1 {
-    font-family: "Poppins Regular";
-    font-weight: 600;
-    font-size: 125%;
-    color: rgb(120, 170, 195);
-}
-
-.counteiner-vantagens h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 130%;
+    gap: 20px;
+    max-width: 900px;
     width: 100%;
 }
 
-
-
-.equipe-img {
-    position: relative;
-    top: -36.5em;
-    left: 5.5%;
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease; /* Adiciona efeito suave ao passar o mouse */
 }
 
-.tecnologia-img {
-    position: relative;
-    top: -35em;
-    left: 70%;
+/* Efeito de aumento ao passar o mouse */
+.card:hover {
+    transform: scale(1.05); /* Aumenta o tamanho dos cards em 5% */
 }
 
-section.parte3 p {
-    font-family: "PlayfairDisplay";
-    font-size: 175%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h3 {
+    color: #7f9db9;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
-.titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+p {
+    font-size: 16px;
+    color: #333;
 }
 
-.container-planos {
-    display: flex;
-    justify-content: space-between;
-    margin: 7%;
-}
-
-.texto-individual,
-.texto-familia,
-.texto-premium p {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-}
-
-.texto h1 {
-    font-family: "Inter Regular";
-}
-
-.texto-individual,
-.texto-familia,
-.texto-premium {
-    align-items: center;
-    color: white;
-    background-color: black;
-    padding-left: 4em;
-    padding-right: 4rem;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    border-top-left-radius: 1.3em;
-    border-top-right-radius: 1.3em;
-}
-
-section.planos {
-    position: relative;
-    top: -5em;
-}
-
-.titulo h1 {
-    font-family: "PlayfairDisplay";
-}
-
-.individual,
-.premium {
-    position: relative;
-    top: 3em;
-}
-
-.premium:hover,
-.familia:hover,
-.individual:hover {
-    transform: scale(1.1);
-    transition: 800ms;
-}
-
-.precos-indv,
-.precos-fam,
-.precos-premium {
-    text-align: center;
-    border: 0.1em solid rgba(53, 53, 53, 0.199);
-    padding-bottom: 2em;
-    border-bottom-left-radius: 1.3em;
-    border-bottom-right-radius: 1.3em;
-}
-
-.precos-indv button,
-.precos-fam button,
-.precos-premium button {
-    background-color: #78aac3;
-    border-color: #78aac3;
-}
-
-.precos-indv button:hover,
-.precos-fam button:hover,
-.precos-premium button:hover {
-    background-color: #4852c2;
-    border-color: #4852c2;
-    transition: 700ms;
-}
-
-.moeda-indv,
-.moeda-fam,
-.moeda-premium {
-    position: relative;
-    top: 2.87em;
-    font-weight: 500;
-}
-
-.centavos-indv,
-.centavos-fam,
-.centavos-premium {
-    position: relative;
-    top: -2.38em;
-    font-size: 1.3em;
-}
-
-.mensalidade-indv,
-.mensalidade-fam,
-.mensalidade-premium {
-    font-weight: 400;
-    position: relative;
-    top: 10em;
-}
-
-.beneficios-indv ul li,
-.beneficios-fam ul li,
-.beneficios-premium ul li {
-    position: relative;
-}
-
-
-
-
-
-/*nova parte da responsividade*/
-
-
-
-.vantagens img {
-    position: relative;
-    left: 15%;
-    top: -10em;
-    margin-top: -18%;
-    border-bottom-left-radius: 4em;
-    border-bottom-right-radius: 4em;
-    border-top-right-radius: 4em;
-    border-top-left-radius: 0.5em;
-    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
-}
-
+/* Responsividade: cards empilhados quando a tela for menor que 768px */
 @media (max-width: 768px) {
-    .vantagens img {
-        width: 70%; /* Diminui o tamanho da imagem */
-        left: 15%; /* Ajusta a posição horizontal, se necessário */
-        top: -5em; /* Desce a imagem */
-        margin-top: 0; /* Remove a margem superior negativa */
+    .card_vantagens {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        top: -5vh;
+        
+    }
+
+    .card {
+        max-width: 100%;
+        margin-bottom: 20px;
+        right: 10%;
     }
 }
+  /* parte4 */
 
-@media (max-width: 576px) {
-    .vantagens img {
-        width: 80%; /* Ajusta o tamanho para telas ainda menores */
-        left: 10%; /* Centraliza um pouco mais em telas muito pequenas */
-        top: -3em; /* Desce mais a imagem */
-        margin-top: 0; /* Remove qualquer margem superior negativa */
-    }
+
+  .titulo {
+    margin-bottom: 30px;
 }
 
+.titulo h2 {
+    position: relative;
+    top: -60vh;
+    left: 95vh;
+    font-size: 24px;
+}
+
+.parte4 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: -4em
+
+}
+
+.plano {
+    position: relative;
+    top: -48vh;
+    left: 12%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    max-width: 280px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    /* Adicionando margem lateral para separar os cards */
+    margin: 0 40px;  /* 15px de margem em cada lado */
+}
+
+.plano-header {
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.plano-body {
+    padding: 20px;
+}
+
+.preco {
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+/* Efeito hover nos planos */
+.plano:hover {
+    transform: scale(1.05);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .parte4 {
+        position: relative;
+        flex-direction: column;
+        top: 50vh;
+        right: 10vh;
+    }
+
+    .plano {
+        
+        max-width: 100%;
+        /* Removendo margem lateral nas telas menores para centralizar os cards */
+        margin: 20px 0;
+    }
+}
