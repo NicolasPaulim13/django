@@ -6,27 +6,27 @@
 
 {% block content %}
 
-<div class="container d-flex flex-column justify-content-center align-items-center min-vh-100">
-  <div class="breadcrumb-container mb-4 text-center">
+<div class="main-container full-height center-items">
+  <div class="hdr mb-4 text-center">
     <h1 class="mb-2">Consulta</h1>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb justify-content-center">
         <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page"><a href="{% url 'consulta' %}">
-            Consulta</a>
-        </li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="{% url 'consulta' %}">Consulta</a></li>
       </ol>
     </nav>
   </div>
-  <button type="submit" class="btn btn-primary btn-compromisso">
+
+  <button type="submit" class="marcarconsultabotao">
     Marcar Consulta
   </button>
 
-  <div class="card p-4 shadow-lg form-container">
+  <div class="card p-4 shadow-lg frm-box">
     <form id="contactForm" class="row g-3">
+      
       <div class="col-12">
         <label for="name" class="form-label">Nome:</label>
-        <input type="text" class="form-control" id="name" placeholder="Name" required />
+        <input type="text" class="form-control" id="name" placeholder="Nome" required />
       </div>
       <div class="col-12">
         <label for="email" class="form-label">E-mail:</label>
@@ -50,7 +50,6 @@
           <option value="proteses_dentarias">Próteses Dentárias</option>
           <option value="consultas_emergencia">Consultas de Emergência</option>
           <option value="acompanhamento_manutencao">Acompanhamento e Manutenção</option>
-
         </select>
       </div>
 
@@ -62,13 +61,14 @@
 
       <div class="col-12">
         <label for="message" class="form-label">Observações:</label>
-        <textarea class="form-control" id="message" rows="1" placeholder="" required></textarea>
+        <textarea class="form-control" id="message" rows="1" placeholder="Observações" required></textarea>
       </div>
 
       <div class="col-12 d-grid"></div>
     </form>
   </div>
 </div>
+
 
 <script src="{% static 'js/Consulta.js' %}"></script>
 

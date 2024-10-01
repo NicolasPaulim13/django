@@ -1,34 +1,44 @@
-.btn-outline-primary {
-    padding: 5px 10px;
+/* Botão principal */
+.botaosalvar{
+    z-index: +1;
+    position: relative;
+    top: 42em;
+    width: 100%;
+}
+.btn{
+    width: 100%;
+}
+.btn-primary {
     font-size: 0.9rem;
     width: 100%;
 }
 
-.breadcrumb-container h1 {
+.hdr h1 {
     font-size: 2rem;
     font-weight: bold;
     position: relative;
     top: 60px;
 }
 
-.breadcrumb-container .breadcrumb {
+.breadcrumb {
     background: none;
     padding: 0;
     position: relative;
     top: 70px;
 }
 
-.breadcrumb-container .breadcrumb-item a {
+.breadcrumb-item a {
     color: #6c757d;
     text-decoration: none;
     position: relative;
 }
 
-.breadcrumb-container .breadcrumb-item a:hover {
+.breadcrumb-item a:hover {
     text-decoration: underline;
 }
 
-.form-container {
+/* Formulário */
+.frm-box {
     width: 100%;
     max-width: 600px;
     height: 670px;
@@ -43,26 +53,25 @@
     border-radius: 10px;
 }
 
-.form-control {
-    border-radius: 10px;
-}
-
-
-.btn-custom {
+.btn-schedule {
     background-color: #00bcd4;
     color: #ffffff;
     font-weight: bold;
     border-radius: 30px;
     border: none;
     transition: background-color 0.3s;
-    width: 50%; /* Aumenta a largura do botão para 50% */
-    padding: 15px; /* Aumenta o padding para deixar o botão maior */
+    width: 50%;
+    padding: 15px;
 }
 
-/* Estilo para o botão "ENVIAR MEU COMPROMISSO" */
+.btn-schedule:hover {
+    background-color: #0097a7;
+}
+
+/* Botão "Enviar Compromisso" */
 .btn-compromisso {
-    width: 50%; /* Aumenta a largura do botão para 50% */
-    padding: 15px; /* Aumenta o padding para deixar o botão maior */
+    width: 50%;
+    padding: 15px;
     position: relative;
     top: 650px;
     z-index: 1;
@@ -72,16 +81,14 @@
     border-radius: 30px;
     border: none;
     transition: background-color 0.3s;
-    width: 25%; /* Mantém a largura para o botão "Faça sua Consulta" */
     height: 50px;
-    position: relative;
 }
 
 .btn-compromisso:hover {
     background-color: #0097a7;
 }
 
-/* Estilo para o botão "Faça sua Consulta" */
+/* Botão "Faça sua Consulta" */
 .btn-custom {
     background-color: #00bcd4;
     color: #ffffff;
@@ -89,13 +96,10 @@
     border-radius: 30px;
     border: none;
     transition: background-color 0.3s;
-    width: 100%; /* Mantém a largura para o botão "Faça sua Consulta" */
+    width: 100%;
     height: 50px;
     position: relative;
     right: 100px;
-
-   
-    
 }
 
 .btn-custom:hover {
@@ -103,25 +107,32 @@
 }
 
 
-.btn-custom:hover {
-    background-color: #0097a7;
-}
+.marcarconsultabotao{
+    z-index: +1;
+    position: relative;
+    top: 110vh;
+    left: 95vh;
 
-.tudobaixo {
+}
+/* Parte inferior */
+.lower-section {
     padding: 20px;
     background: #e0f7fa;
     padding: 20px;
 }
+.card {
+    width: 120%
+}
 
-.partedebaixo {
+.box {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    max-width: 900px;
-    width: 100%;
+    max-width: 1000px;
+    width: 120%;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -211,6 +222,7 @@
     color: #666;
 }
 
+/* Botões */
 button {
     background-color: #00bcd4;
     color: #fff;
@@ -219,54 +231,7 @@ button {
     border-radius: 20px;
     cursor: pointer;
     margin-top: 5px;
-    
 }
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .cabeçalho-nav {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-    
-    .cabeçalho-nav img {
-        margin-bottom: 10px;
-    }
-    
-    .nav {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .nav-item {
-        margin: 5px 0;
-    }
-    
-    .btn-primary{
-        width: auto;
-    }
-    .btn-outline-primary {
-        margin-top: 10px;
-        width: 100%;
-    }
-}
-
-@media (max-width: 576px) {
-    .form-container {
-        padding: 15px;
-    }
-    
-    .partedebaixo {
-        flex-direction: column;
-    }
-    
-    .info {
-        border-right: none;
-        border-bottom: 1px solid #e0e0e0;
-    }   
-}
-
 
 button[type="submit"] {
     background-color: #78ABC3;
@@ -282,4 +247,50 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #69C4D3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .nav-header img {
+        margin-bottom: 10px;
+    }
+    
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-item {
+        margin: 5px 0;
+    }
+    
+    .btn-primary {
+        width: auto;
+    }
+    
+    .btn-outline-primary {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .frm-box {
+        padding: 15px;
+    }
+    
+    .box {
+        flex-direction: column;
+    }
+    
+    .info {
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }
 }
