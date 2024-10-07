@@ -4,7 +4,7 @@ function generateTimeOptions() {
 
     // Define start and end time
     const start = new Date();
-    start.setHours(08, 0, 0, 0); // Start at midnight
+    start.setHours(8, 0, 0, 0); // Start at midnight
     const end = new Date();
     end.setHours(20, 0, 0, 0); // End at 23:30
 
