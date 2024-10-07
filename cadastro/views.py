@@ -1,32 +1,29 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login
-from django.contrib.auth.forms import AuthenticationForm
 from django.contrib import messages
+from cadastro_registro.models import CadastroRegistro  # Importa o modelo CadastroRegistro do app correspondente
 
-def cadastro(request):
+def login_page(request):
     if request.method == 'POST':
-        form = AuthenticationForm(request, data=request.POST)
-        confirma_password = request.POST.get('confirma_password')  # Pegando o campo de confirmação de senha
-        
-        if form.is_valid():
-            username = form.cleaned_data.get('username')
-            password = form.cleaned_data.get('password')
+        nome_paciente = request.POST.get('nome_paciente')
+        senha_paciente = request.POST.get('senha_paciente')
+        confirma_senha_paciente = request.POST.get('confirma_senha_paciente')
 
-            # Verificar se a senha e a confirmação de senha coincidem
-            if password != confirma_password:
-                messages.error(request, 'As senhas não coincidem. Tente novamente.')
-                return render(request, 'cadastro/cadastro.html', {'form': form})
+        # Verifica se a senha e a confirmação de senha coincidem
+        if senha_paciente != confirma_senha_paciente:
+            messages.error(request, 'As senhas não coincidem. Tente novamente.')
+            return render(request, 'cadastro/cadastro.html')
 
-            user = authenticate(username=username, password=password)
-            if user is not None:
-                login(request, user)
-                messages.success(request, f'Seja bem-vindo(a), {username}!')
-                return redirect('index_cliente')  # Redireciona para o app 'index_cliente' após login bem-sucedido
+        try:
+            # Verifica se o usuário existe no banco de dados CadastroRegistro
+            usuario = CadastroRegistro.objects.get(nome_paciente=nome_paciente)
+
+            # Verifica se a senha está correta
+            if usuario.senha_paciente == senha_paciente:
+                nome = usuario.nome_paciente.split()[0]  # Pega o primeiro nome do usuário
+                return render(request, 'index_cliente.html', {'nomes': [nome]})
             else:
-                messages.error(request, 'Usuário ou senha incorretos.')
-        else:
-            messages.error(request, 'Erro ao validar o formulário.')
-    else:
-        form = AuthenticationForm()
+                messages.error(request, 'Senha incorreta.')
+        except CadastroRegistro.DoesNotExist:
+            messages.error(request, 'Usuário não encontrado.')
 
-    return render(request, 'cadastro/cadastro.html', {'form': form})
+    return render(request, 'cadastro/cadastro.html')

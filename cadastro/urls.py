@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import cadastro
+from .views import login_page  # Importa a nova view de login
 
 urlpatterns = [
-    path('cadastro/', cadastro, name='cadastro'),  # Rota para a página de login
+    path('login/', login_page, name='login'),  # Rota para a página de login
 ]
