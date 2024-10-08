@@ -31,19 +31,28 @@ urlpatterns = [
     path('', lambda request: redirect('index/'), name='root_redirect'),
 
     path('faq/', include('core.urls')),
-    path('index/', include('index.urls')),  
+
+    path('index/', include('index.urls')),
+
     path('tratamentos/', include('tratamentos.urls')),
+
     path('planos/', include('planos.urls')),
+
     path('contatos/', include('contatos.urls')),
+
     path('consulta/', include('consulta.urls')),
+
     path('cadastro/', include('cadastro.urls')),
+
     path('cadastro_registro/', include('cadastro_registro.urls')),
+
     path('cadastro_adm/', include('cadastro_adm.urls')),
+
     path('cadastro_chefe/', include('cadastro_chefe.urls')),
+
     path('sobrenos/', include('sobrenos.urls')),
-    path('index_medico/', include('index_medico.urls')),
-    path('index_adm/', include('index_adm.urls')),
-    path('index_cliente/', include('index_cliente.urls')),
+
     path('agendamentos/', include('agendamentos.urls')),
+        
     path('esqueceu_senha/', include('esqueceu_senha.urls')),
 ]   
