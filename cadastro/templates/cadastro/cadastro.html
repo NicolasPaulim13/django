@@ -9,20 +9,25 @@
     <div class="login-container">
         <img src="{% static 'img/qualquerbosta.png' %}" alt="Logo">
         <h2>Login Paciente</h2>
-        <form method="post">
+        <form method="post" action="{% url 'login' %}">
+
             {% csrf_token %}
             {{ form.non_field_errors }}
+            
             <div>
-                {{ form.username.errors }}
-                <input type="text" name="username" placeholder="Nome de usuário" required value="{{ form.username.value|default_if_none:'' }}">
+                <div>
+                    {{ form.username.errors }}
+                    <!-- Ajuste: name agora é nome_paciente -->
+                    <input id="usuario" type="text" name="nome_paciente" placeholder="Nome de usuário" required value="{{ form.username.value|default_if_none:'' }}">
+                </div>
             </div>
+
             <div>
                 {{ form.password.errors }}
-                <input type="password" name="password" placeholder="Senha" required>
+                <!-- Ajuste: name agora é senha_paciente -->
+                <input id="senha" type="password" name="senha_paciente" placeholder="Senha" required>
             </div>
-            <div>
-                <input type="password" name="confirma_password" placeholder="Confirme sua senha" required>  <!-- Adicionado campo de confirmação -->
-            </div>
+
             <button type="submit" class="entrar-button">Entrar</button>
         </form>
 
@@ -39,17 +44,17 @@
         <div class="social-login">
             <p>Ou entre com:</p>
             <div class="social-buttons">
-                <p><img src="https://img.icons8.com/?size=100&id=17949&format=png&color=000000" alt="">Sign in</p>
-                <p><img src="https://img.icons8.com/?size=100&id=95294&format=png&color=000000" alt="">Sign in</p>
+                <p><img src="https://img.icons8.com/?size=100&id=17949&format=png&color=000000" alt=""></p>
+                <p><img src="https://img.icons8.com/?size=100&id=95294&format=png&color=000000" alt=""></p>
             </div>
         </div>
 
-        <!-- Link para registro de novo usuário -->
+        <!-- Links adicionais -->
         <div class="signup-link">
             <p>Não tem uma conta? <a href="{% url 'cadastro_registro' %}">Registre-se aqui</a></p>
             <p>Dentista? <a href="{% url 'cadastro_adm' %}">Acesse o painel exclusivo aqui</a></p>
             <p>Administrador? <a href="{% url 'cadastro_chefe' %}">Acesse o painel administrativo aqui</a></p>
-            <p>Esqueci a senha <a href="{% url 'esqueceu_senha' %}">Acesse o painel administrativo aqui</a></p>
+            <p>Esqueci a senha <a href="{% url 'esqueceu_senha' %}">Acesse aqui</a></p>
         </div>
     </div>
 </div>

@@ -6,4 +6,5 @@ from .views import faq  # Importa a função de view 'home' do módulo 'views' l
 urlpatterns = [
 
     path('faq/', faq, name='faq'),
+    path('faq_logado/', faq, name='faq_logado'),
 ]

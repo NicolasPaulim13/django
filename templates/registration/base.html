@@ -34,11 +34,24 @@
       <li class="nav-item"><a class="nav-link" href="{% url 'faq' %}">FAQ</a></li>
       <li class="nav-item"><a class="nav-link" href="{% url 'contatos' %}">Contatos</a></li>
       <li class="nav-item"><a class="nav-link" href="{% url 'sobrenos' %}">Sobre Nós</a></li>
-      <!-- Alterado para abrir o modal -->
-      <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Login</a></li>
+
+      <!-- Verifique se o usuário está autenticado -->
+      {% if user.is_authenticated %}
+        <li class="nav-item">
+          <a class="nav-link" href="#">Oi, {{ user.cadastro_registro.nome_paciente }}!</a> <!-- Mostra o nome do paciente logado -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'index' %}">Sair</a> <!-- Botão de logout -->
+        </li>
+      {% else %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'login' %}">Login</a> <!-- Botão de login -->
+        </li>
+      {% endif %}
     </ul>
     <a href="{% url 'consulta' %}"><button type="button" class="btn btn-outline-primary">Faça sua Consulta</button></a>
-  </header>
+</header>
+
     
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
