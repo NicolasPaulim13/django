@@ -49,7 +49,6 @@ INSTALLED_APPS = [
     'cadastro_chefe',
     'index_medico',
     'index_adm',
-    'index_cliente',
     'cadastro_registro',
     'esqueceu_senha',
     'marcar_consulta',
@@ -79,6 +78,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',  # Adiciona 'request' ao contexto dos templates.
                 'django.contrib.auth.context_processors.auth',  # Adiciona variáveis relacionadas à autenticação.
                 'django.contrib.messages.context_processors.messages',  # Adiciona mensagens ao contexto dos templates.
+                'sgo.context_processors.paciente_context',
             ],
         },
     },

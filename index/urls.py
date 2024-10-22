@@ -1,9 +1,8 @@
-# Importações necessárias para definir as rotas de URLs
-from django.urls import path  # Importa a função path para definir as rotas de URL
-from .views import index  # Importa a função de view 'home' do módulo 'views' local
+from django.urls import path
+from .views import index, logout_view
 
-# Lista de padrões de URL para a aplicação 'core'
+# Lista de padrões de URL para a aplicação 'index'
 urlpatterns = [
-
     path('', index, name='index'),
+    path('logout/', logout_view, name='logout'),  # Rota para o logout
 ]

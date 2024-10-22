@@ -1,6 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib.auth import logout
 
 def index(request):
-    return render(request, 'index/index.html')  # Renderiza o template home.html
+    # Lógica existente para renderizar a página inicial
+    return render(request, 'index/index.html')
 
-
+def logout_view(request):
+    logout(request)  # Faz o logout do usuário
+    return redirect('index')  # Redireciona para a página inicial após o logout

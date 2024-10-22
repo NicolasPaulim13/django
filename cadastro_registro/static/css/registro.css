@@ -49,10 +49,7 @@
         margin: 0; 
     }
     
-    input[type=number] {
-        -moz-appearance: textfield; /* Para o Firefox */
-    }
-    
+   
     /* Estilos adicionais */
     .senha {
         position: relative;
@@ -112,4 +109,38 @@
         background-color: white;
         color: gray;
     }
+
+    
+    .senhatudo{
+        position: relative;
+        top: -10vh;
+    }
+    
+    .senha-requisitos-container {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .senha-requisitos-container.hidden {
+        display: none; /* Oculta a div inicialmente */
+    }
+    
+    .requisito-item {
+        display: flex;
+        align-items: center;
+        color: red; /* Cor inicial vermelha */
+        margin-bottom: 5px;
+    }
+    
+    .requisito-item::before {
+        content: '●';
+        color: inherit;
+        margin-right: 8px;
+        font-size: 1.2em;
+    }
+    
+    
     

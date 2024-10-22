@@ -1,4 +1,9 @@
 from django.shortcuts import render
 
+from django.contrib.auth.decorators import login_required
+
+@login_required(login_url='login')
 def consulta(request):
-    return render(request, 'consulta/consulta.html')  # Renderiza o template home.html
+    # Lógica da consulta aqui...
+    return render(request, 'consulta/consulta.html')
+

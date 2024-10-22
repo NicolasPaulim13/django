@@ -43,7 +43,6 @@ urlpatterns = [
     path('sobrenos/', include('sobrenos.urls')),
     path('index_medico/', include('index_medico.urls')),
     path('index_adm/', include('index_adm.urls')),
-    path('index_cliente/', include('index_cliente.urls')),
     path('esqueceu_senha/', include('esqueceu_senha.urls')),
     path('marcar_consulta/', include('marcar_consulta.urls')),
 ]   

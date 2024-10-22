@@ -9,6 +9,7 @@ class CadastroRegistroAdmin(admin.ModelAdmin):
         'cpf_paciente', 
         'data_nascimento_paciente', 
         'sexo_paciente',
-        'user'  # Exibe o usuário associado
+        'user'
     )
     search_fields = ('nome_paciente', 'email_paciente', 'cpf_paciente', 'user__username')
+

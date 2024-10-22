@@ -36,9 +36,9 @@ class CadastroRegistroForm(forms.ModelForm):
 
     def save(self, user, commit=True):
         instance = super(CadastroRegistroForm, self).save(commit=False)
-        # Faz o hash da senha antes de salvar
         instance.senha_paciente = make_password(self.cleaned_data['senha_paciente'])
         instance.user = user  # Associa o cadastro ao usuário
         if commit:
             instance.save()
         return instance
+

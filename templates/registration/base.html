@@ -36,20 +36,52 @@
       <li class="nav-item"><a class="nav-link" href="{% url 'sobrenos' %}">Sobre Nós</a></li>
 
       <!-- Verifique se o usuário está autenticado -->
-      {% if user.is_authenticated %}
-        <li class="nav-item">
-          <a class="nav-link" href="#">Oi, {{ user.cadastro_registro.nome_paciente }}!</a> <!-- Mostra o nome do paciente logado -->
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'index' %}">Sair</a> <!-- Botão de logout -->
-        </li>
-      {% else %}
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'login' %}">Login</a> <!-- Botão de login -->
-        </li>
-      {% endif %}
-    </ul>
-    <a href="{% url 'consulta' %}"><button type="button" class="btn btn-outline-primary">Faça sua Consulta</button></a>
+      {% if user.is_authenticated and user.cadastroregistro %}
+    <li class="nav-item">
+        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#logoutModal">
+            Oi, {{ user.cadastroregistro.nome_paciente }}!
+        </a>
+    </li>
+{% else %}
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'login' %}">Login</a>
+    </li>
+{% endif %}
+
+{% if user.is_authenticated %}
+    <li class="nav-item">
+      <a href="{% url 'consulta' %}"><button type="button" class="btn btn-outline-primary">Faça sua Consulta</button></a>
+    </li>
+{% else %}
+    <li class="nav-item">
+      <a href="{% url 'login' %}"><button type="button" class="btn btn-outline-primary">Faça sua Consulta</button></a>
+    </li>
+{% endif %}
+
+
+
+<!-- Modal de Logout -->
+<div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="logoutModalLabel">Deseja sair?</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+              Tem certeza que deseja sair da sua conta?
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <a href="{% url 'logout' %}" class="btn btn-primary">Sair</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
 </header>
 
     

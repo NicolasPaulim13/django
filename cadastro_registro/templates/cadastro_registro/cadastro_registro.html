@@ -7,12 +7,9 @@
 {% block content %}
 <div class="tudis">
     <div class="login-container">
-        <!-- Logo da página de login -->
         <img src="{% static 'img/registro-online.png' %}" alt="Logo">
-        <!-- Título da página -->
         <h2>Registre-se!</h2>
-        <!-- Formulário de registro -->
-        <form method="POST" action="{% url 'cadastro_create_paciente' %}">
+        <form method="POST" action="{% url 'cadastro_create_paciente' %}" id="registration-form">
             {% csrf_token %}
             
             <div class="nome">
@@ -39,48 +36,31 @@
                     <option value="O">Outro</option>
                 </select>
             </div>
+            <div class="senhatudo">
 
             <div class="senha">
-                <input type="password" name="senha_paciente" placeholder="Senha" required>
+                <input type="password" name="senha_paciente" id="senha_paciente" placeholder="Senha" required>
+            </div>
+
+            <!-- Nova seção de requisitos de senha -->
+            <div class="senha-requisitos-container hidden" id="senha-requisitos">
+                <div class="requisito-item requisito-min-length">Pelo menos 8 caracteres</div>
+                <div class="requisito-item requisito-number">Inclui um número</div>
+                <div class="requisito-item requisito-special-char">Inclui um caractere especial</div>
             </div>
 
             <div class="confirma_senha">
                 <input type="password" name="confirma_senha_paciente" placeholder="Confirme sua Senha" required>
             </div>
+        </div>
 
             <button type="submit">Cadastrar</button>
         </form>
-
-        <!-- Exibição de erros no formulário -->
-        {% if form.errors %}
-        <div class="error">
-            <p>Por favor, corrija os erros abaixo:</p>
-            <ul>
-                {% for field in form %}
-                    {% if field.errors %}
-                        <li>{{ field.label }}: {{ field.errors }}</li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        </div>
-        {% endif %}
-
-        <!-- Seção de login por redes sociais -->
-        <div class="social-login">
-            <p>Ou entre com:</p>
-            <div class="social-buttons">
-                <p><img src="https://img.icons8.com/?size=100&id=17949&format=png&color=000000" alt="">Sign in</p>
-                <p><img src="https://img.icons8.com/?size=100&id=95294&format=png&color=000000" alt="">Sign in</p>
-            </div>
-        </div>
-
-        <!-- Link para registro de novo usuário -->
-        <div class="signup-link">
-            <p>Dentista? <a href="{% url 'cadastro_adm' %}">Acesse o painel exclusivo aqui</a></p>
-            <p>Paciente? <a href="{% url 'login' %}">Acesse seu painel pessoal aqui</a></p>
-        </div>
     </div>
 </div>
 
 <script src="{% static 'js/registro.js' %}"></script>
+
+
+
 {% endblock %}
